@@ -1,0 +1,13 @@
+{
+ "f_b": 128,
+ "g_b": 136,
+ "h_b": 57,
+ "nn_params": 321,
+ "physical_theta_f": 4,
+ "x0_phys": 2,
+ "x_b0": 3,
+ "total_params_lower_bound": 330,
+ "fp32_bytes_lower_bound": 1320,
+ "torch_components_us_per_step_median": 221.90658332935223,
+ "note": "instantiated with the Main.ipynb architecture (random weights: latency does not depend on values); components only, a lower bound on its per-sample latency (the repo simulator adds normalisation, projection and python loops). Measured on a heavily loaded machine."
+}

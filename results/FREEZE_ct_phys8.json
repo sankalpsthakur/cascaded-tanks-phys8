@@ -1,0 +1,69 @@
+{
+  "name": "ct_phys8",
+  "description": "Grey-box two-tank Torricelli ODE: bottle-shaped lower tank (capacity slope cA), signed pump offset b4, upper-tank overflow clamp at 10 with surplus routed to the lower tank (beta), lower-tank full clamp at 10-a, sensor offset a, RK4 x4 sub-steps, ZOH input. 8 free physical parameters; the 2 initial states are fitted per record from the first 50 samples only.",
+  "structure": {
+    "name": "C  +b4+cA",
+    "free": [
+      "k1",
+      "r2",
+      "k3",
+      "k4",
+      "beta",
+      "a",
+      "b4",
+      "cA"
+    ],
+    "tie_r2": false,
+    "clamp_x2": true,
+    "nsub": 4,
+    "res_hidden": 0
+  },
+  "fit": {
+    "n_starts": 8,
+    "maxiter": 600,
+    "optimiser": "scipy L-BFGS-B on JAX float64 gradients, simulation-error MSE on the full estimation record"
+  },
+  "initial_state": "per-record: x0 fitted on the first 50 samples (the official state-initialisation window) with all other parameters frozen",
+  "selection": {
+    "method": "4 contiguous blocks of 256 on the ESTIMATION record only; block-masked training; block scored like the official test (window init, free run, RMSE over samples 50..255)",
+    "cv_pooled_rmse": 0.2089,
+    "cv_fold_rmse": [
+      0.139,
+      0.252,
+      0.177,
+      0.246
+    ],
+    "alternatives_cv_pooled": {
+      "A base": 0.3074,
+      "B +b4": 0.2618,
+      "C +b4+cA": 0.2089,
+      "F1 +fir": 0.2084,
+      "R1 residual MLP(4)": 0.2256,
+      "H1 +h0": 0.2336,
+      "E free exponents": "overfits (fold 0: 0.215 vs 0.139)",
+      "D +c2": "unstable window fit"
+    },
+    "rule": "smallest structure within one standard error (~0.025) of the best pooled CV RMSE"
+  },
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "protocol": "official nonlinear_benchmarks metric RMSE(test, y_model, n_init=50), free-run simulation, test record scored once per seed via ct.protocol.test_eval",
+  "claim_rule": {
+    "headline": "mean over seeds 0-9 of the official test RMSE (never the best seed); uncertainty = paired/unpaired moving-block bootstrap (block 25) of the test residuals, NOT the seed spread (seeds are expected to collapse onto one optimum; the reference code's 0.04 seed spread comes from network initialisation and is not comparable)",
+    "beats_0221_entry": "only if, for every one of our seeds, the 95% upper bound of the paired moving-block-bootstrap RMSE difference (ours minus the reference code's seed-42 trajectory, test[50:], block 25) is below 0 (ct/compare_ref.py)",
+    "beats_reference_code_in_general": "reported as the fraction of the other 10 reference seeds beaten under the same paired rule",
+    "wording": "best published result on Cascaded Tanks, official split, n_init=50 free-run simulation RMSE, self-evaluated, as of 2026-10-07 -- used ONLY if the first rule holds; otherwise 'matches/does not beat' with the numbers",
+    "post_hoc": "any further scoring of the test record after this run (e.g. variants, ensembles, reverse split) is logged, labelled post-hoc, and excluded from the claim"
+  },
+  "test_record_looked_at_before_freeze": "dataset summary statistics (min/max of y, first 8 samples, saturation count) were printed at load time and the third-party 0.221 code was run on the test record (11 seeds, all logged); the test minimum (2.16 V < estimation minimum 2.91 V) motivated an additional level-extrapolation validation on the ESTIMATION record. No model of ours was scored on the test record before this freeze."
+}

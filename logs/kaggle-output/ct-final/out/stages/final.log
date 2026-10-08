@@ -1,0 +1,11 @@
+seed 0: test RMSE 0.2720  train 0.1785  95% block-bootstrap CI [0.216, 0.339]
+seed 1: test RMSE 0.2719  train 0.1785  95% block-bootstrap CI [0.216, 0.339]
+seed 2: test RMSE 0.2720  train 0.1785  95% block-bootstrap CI [0.216, 0.340]
+seed 3: test RMSE 0.2719  train 0.1785  95% block-bootstrap CI [0.216, 0.339]
+seed 4: test RMSE 0.2717  train 0.1785  95% block-bootstrap CI [0.216, 0.339]
+seed 5: test RMSE 0.2718  train 0.1785  95% block-bootstrap CI [0.216, 0.339]
+seed 6: test RMSE 0.2718  train 0.1785  95% block-bootstrap CI [0.216, 0.339]
+seed 7: test RMSE 0.2719  train 0.1785  95% block-bootstrap CI [0.216, 0.339]
+seed 8: test RMSE 0.2718  train 0.1785  95% block-bootstrap CI [0.216, 0.339]
+seed 9: test RMSE 0.2720  train 0.1785  95% block-bootstrap CI [0.217, 0.339]
+{"n": 10, "mean": 0.2718880505401261, "sd": 0.00010118526103558966, "min": 0.2717167003338534, "max": 0.27202762850326706}

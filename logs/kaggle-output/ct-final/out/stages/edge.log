@@ -1,0 +1,10 @@
+cc1: fatal error: edge_out/bench_main.c: No such file or directory
+compilation terminated.
+Traceback (most recent call last):
+  File "/tmp/ctrepo/tools/ct_edge_run.py", line 187, in <module>
+    main()
+  File "/tmp/ctrepo/tools/ct_edge_run.py", line 172, in main
+    subprocess.check_call([cc, "-O2", "-std=gnu99", "-o", hexe, os.path.join(a.out, "bench_main.c"), "-lm"], cwd=a.out)
+  File "/usr/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['/usr/bin/gcc', '-O2', '-std=gnu99', '-o', 'edge_out/ct_bench', 'edge_out/bench_main.c', '-lm']' returned non-zero exit status 1.

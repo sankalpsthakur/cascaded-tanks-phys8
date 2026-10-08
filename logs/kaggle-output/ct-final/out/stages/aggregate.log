@@ -1,0 +1,19 @@
+{
+ "n_seeds": 10,
+ "mean_rmse": 0.2718880505401261,
+ "sd_over_seeds": 0.00010118526103558966,
+ "min_rmse": 0.2717167003338534,
+ "max_rmse": 0.27202762850326706,
+ "mean_ci95_block_bootstrap": [
+  0.21644846749075872,
+  0.339267919568163
+ ],
+ "prob_bootstrap_mean_below_target": 0.03975,
+ "max_abs_diff_vs_logged_rmse": 0.0
+}
+claim: {
+ "rule": "freeze claim_rule: 'best published result' wording only if the paired 95% upper bound vs the 0.221-entry code (seed 42) is < 0 for EVERY one of our seeds",
+ "beats_0221_entry_every_seed": false,
+ "mean_below_0221": false,
+ "wording": "does NOT meet the pre-registered rule for a 'best published result' claim; report the numbers as they are"
+}

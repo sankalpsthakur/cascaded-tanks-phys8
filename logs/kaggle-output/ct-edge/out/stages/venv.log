@@ -1,0 +1,79 @@
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 20.6/20.6 MB 74.9 MB/s eta 0:00:00
+warning: The `--system` flag has no effect, `uv venv` always ignores virtual environments when finding a Python interpreter; did you mean `--no-managed-python`?
+Using CPython 3.12.3 interpreter at: /usr/bin/python3.12
+Creating virtual environment at: /tmp/ctvenv
+Activate with: source /tmp/ctvenv/bin/activate
+Using Python 3.12.3 environment at: /tmp/ctvenv
+Resolved 25 packages in 1.30s
+   Building progressbar==2.5
+Downloading numpy (15.9MiB)
+Downloading matplotlib (8.4MiB)
+Downloading fonttools (5.1MiB)
+Downloading kiwisolver (1.4MiB)
+Downloading jax (3.2MiB)
+Downloading jaxlib (85.7MiB)
+Downloading scipy (33.7MiB)
+Downloading pillow (6.6MiB)
+ Downloaded kiwisolver
+ Downloaded jax
+ Downloaded fonttools
+ Downloaded pillow
+ Downloaded matplotlib
+      Built progressbar==2.5
+ Downloaded numpy
+ Downloaded scipy
+ Downloaded jaxlib
+Prepared 25 packages in 1.87s
+Installed 25 packages in 66ms
+ + certifi==2026.7.22
+ + charset-normalizer==3.5.2
+ + contourpy==1.4.0
+ + cycler==0.12.1
+ + fonttools==4.66.1
+ + idna==3.20
+ + jax==0.11.2
+ + jaxlib==0.11.2
+ + kiwisolver==1.5.1
+ + matplotlib==3.10.9
+ + ml-dtypes==0.6.0
+ + nonlinear-benchmarks==1.0.1
+ + numpy==2.5.3
+ + opt-einsum==3.4.0
+ + packaging==26.3
+ + pillow==12.3.0
+ + progressbar==2.5
+ + pyparsing==3.3.3
+ + python-dateutil==2.9.0.post0
+ + rarfile==4.5
+ + requests==2.34.2
+ + scipy==1.18.1
+ + six==1.17.0
+ + tqdm==4.70.1
+ + urllib3==2.8.0
+Using Python 3.12.3 environment at: /tmp/ctvenv
+certifi==2026.7.22
+charset-normalizer==3.5.2
+contourpy==1.4.0
+cycler==0.12.1
+fonttools==4.66.1
+idna==3.20
+jax==0.11.2
+jaxlib==0.11.2
+kiwisolver==1.5.1
+matplotlib==3.10.9
+ml-dtypes==0.6.0
+nonlinear-benchmarks==1.0.1
+numpy==2.5.3
+opt-einsum==3.4.0
+packaging==26.3
+pillow==12.3.0
+progressbar==2.5
+pyparsing==3.3.3
+python-dateutil==2.9.0.post0
+rarfile==4.5
+requests==2.34.2
+scipy==1.18.1
+six==1.17.0
+tqdm==4.70.1
+urllib3==2.8.0
+VERSIONS {"python": "3.12.3", "numpy": "2.5.3", "scipy": "1.18.1", "jax": "0.11.2", "jaxlib": "0.11.2", "matplotlib": "3.10.9", "nonlinear_benchmarks": "1.0.1"}

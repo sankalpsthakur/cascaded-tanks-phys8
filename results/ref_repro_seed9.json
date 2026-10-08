@@ -1,0 +1,10 @@
+{
+ "seed": 9,
+ "augmentation": "Exact - MANAM",
+ "epochs_phys": 10,
+ "epochs_neural": 100,
+ "rmse_repo_convention_test6": 0.24800273223395444,
+ "rmse_official_ninit50": 0.24693808027833686,
+ "wall_s": 69.68229413032532,
+ "torch": "2.14.1"
+}

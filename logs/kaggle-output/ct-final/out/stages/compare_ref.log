@@ -1,0 +1,10 @@
+{
+ "mean_rmse_over_seeds": 0.2718880505401261,
+ "beats_0221_entry_every_seed": false,
+ "fraction_of_other_reference_seeds_beaten": 0.0,
+ "n_our_seeds": 10,
+ "n_reference_seeds": 11
+}
+our seed 0 vs reference seed 42: ref RMSE 0.2163  diff +0.0557  95% [-0.0025, +0.1232]
+our seed 0 vs reference seed 3: ref RMSE 0.2383  diff +0.0337  95% [-0.0188, +0.0982]
+our seed 0 vs reference seed 8: ref RMSE 0.2400  diff +0.0320  95% [-0.0374, +0.1115]

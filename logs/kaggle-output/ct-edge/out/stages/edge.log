@@ -1,0 +1,71 @@
+{
+ "train_rmse": 0.17847581050591416,
+ "n_params_incl_x0": 10,
+ "bytes": {
+  "fp32_bytes": 168,
+  "fp16_bytes": 148,
+  "int8_bytes": 512
+ },
+ "raw_payload_bytes": {
+  "fp32": 40,
+  "fp16": 20,
+  "int8": 14
+ }
+}
+{
+ "fp64": {
+  "train_rmse": 0.1784758105059142,
+  "train_rmse_from_sample50": 0.18245239716339653,
+  "delta_vs_fp64": 0.0,
+  "max_abs_dev_of_trajectory_vs_fp64": 0.0,
+  "max_relative_parameter_error": 0.0,
+  "finite": true
+ },
+ "fp32": {
+  "train_rmse": 0.1784758106162566,
+  "train_rmse_from_sample50": 0.18245239704578078,
+  "delta_vs_fp64": 1.1034240188223521e-10,
+  "max_abs_dev_of_trajectory_vs_fp64": 3.917292783484072e-07,
+  "max_relative_parameter_error": 3.2861668800252635e-08,
+  "finite": true
+ },
+ "fp16": {
+  "train_rmse": 0.17850184616605572,
+  "train_rmse_from_sample50": 0.18246755846273516,
+  "delta_vs_fp64": 2.6035660141504602e-05,
+  "max_abs_dev_of_trajectory_vs_fp64": 0.008563325148392309,
+  "max_relative_parameter_error": 0.0004128436175977863,
+  "finite": true
+ },
+ "int8_per_tensor": {
+  "train_rmse": 0.7423623674799867,
+  "train_rmse_from_sample50": 0.7599267814686115,
+  "delta_vs_fp64": 0.5638865569740725,
+  "max_abs_dev_of_trajectory_vs_fp64": 1.6443121032997965,
+  "max_relative_parameter_error": 0.07511245535432694,
+  "finite": true
+ }
+}
+{
+ "bytes_source": 3223,
+ "compiler": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+ "flags": "-O2 -std=gnu99",
+ "train_max_abs_diff_vs_jax": 5.009326287108706e-13,
+ "train_rmse_c99": 0.1784758105058973,
+ "ns_per_step_bench_incl_sin": 296.119,
+ "ns_per_step_bench_runs": [
+  293.267,
+  298.097,
+  296.119
+ ],
+ "ns_per_step_step_only": 288.955,
+ "ns_per_step_step_only_runs": [
+  288.211,
+  289.029,
+  289.947,
+  288.955,
+  288.945
+ ],
+ "one_step_covers": "one 4-s sample = 4 RK4 sub-steps (16 right-hand-side evaluations, 2 powers/sqrt each) + overflow clamp"
+}
+python float ns/step: 28650.349800000185
