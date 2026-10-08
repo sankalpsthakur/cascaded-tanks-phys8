@@ -9,7 +9,7 @@ Form: https://forms.gle/1FNGkpZ5X7kf6ibw7 (Google Form "Result Submission Form -
 | Method name | Grey-box two-tank Torricelli ODE with overflow routing, 8 physical parameters (ct_phys8) |
 | Link to paper/technical report | https://github.com/sankalpsthakur/cascaded-tanks-phys8/blob/main/REPORT.md |
 | Link to Git code repository | https://github.com/sankalpsthakur/cascaded-tanks-phys8 |
-| Git Commit ID / SHA / Hash | <commit SHA after push> |
+| Git Commit ID / SHA / Hash | 2c70a091390473a3be3750bd83f85497a5698c5e |
 | Benchmark System | Cascaded Tanks |
 | RMSE test results | 0.272 V (mean of 10 optimiser seeds, range 0.2717-0.2720; official RMSE(y, y_model, n_init=50), free-run simulation; block-bootstrap 95 % interval of the mean 0.216-0.339 V) |
 | Approximate training time | 1-60 min (232-294 s per fit on one Kaggle vCPU; about 2 min on an Apple M4) |
