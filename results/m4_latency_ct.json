@@ -1,0 +1,1 @@
+{"utc":"2026-10-09T18:44Z","load_1min":3.83,"chip":"Apple M4","step_only_ns_runs":"161.520 162.264 160.218 160.106 160.173 ","bench_incl_sin_ns_runs":"163.982 164.413 163.650 ","flags":"clang -O2 -std=c99","threads":1}

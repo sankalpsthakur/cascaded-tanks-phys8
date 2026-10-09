@@ -17,7 +17,7 @@ What the reference code shows: the 0.221 V entry's code, run unchanged with the 
 
 ## Edge numbers
 
-10 numbers: 40 B in fp32, 20 B in fp16, 14 B in int8. fp16 changes the train RMSE by 2.6e-5 V; int8 with one shared scale fails (+0.56 V). The C99 step (`results/ct_edge_partial/ct_step.c`, emitted by `ct/edge.py`) takes 289 ns per 4-s sample on one Intel Xeon core at 2.2 GHz and matches the JAX simulation within 5e-13 V. Apple M4 latency: not measured yet (`tools/m4_latency.sh`).
+10 numbers: 40 B in fp32, 20 B in fp16, 14 B in int8. fp16 changes the train RMSE by 2.6e-5 V; int8 with one shared scale fails (+0.56 V). The C99 step (`results/ct_edge_partial/ct_step.c`, emitted by `ct/edge.py`) takes 289 ns per 4-s sample on one Intel Xeon core at 2.2 GHz and matches the JAX simulation within 5e-13 V. Apple M4, 1 thread: 160 ns per sample for the C99 step (measured 2026-10-09 at a load average of 3.8; `results/m4_latency_ct.json`).
 
 ## Integrity
 
