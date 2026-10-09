@@ -47,3 +47,7 @@ python ct/plots.py ct_phys8
 ## Licence
 
 Apache-2.0 (see `LICENSE`). Sankalp Thakur, October 2026. Self-evaluated; not peer-reviewed.
+
+## Round 2 (2026-10-09): exploratory, not an entry
+
+A second pre-registered selection (14 candidate structures, estimation record only; `PREREGISTRATION-CT-ROUND2.md`, code in `ct2/`, `ct/` untouched) chose `ct_phys8` plus a level-dependent lower-outlet coefficient (11 numbers). Scored once per seed: mean test RMSE **0.2362 V**, 95 % block-bootstrap interval 0.200-0.274 V. It still does not beat the 0.221 V entry under the pre-registered paired rule (+0.020 V against that entry's code at its default seed, interval -0.018 to +0.058). The candidate families were chosen after the round-1 analysis of the test residuals, so round 2 is not an independent test of the record and is **not submitted** to the results sheet; it is reported here, with every test scoring in `TEST-LOG.md` (rows 25-34), in `REPORT.md` section 9.

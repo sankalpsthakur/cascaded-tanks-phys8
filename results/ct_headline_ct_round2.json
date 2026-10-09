@@ -1,0 +1,57 @@
+{
+ "n_seeds": 10,
+ "n_samples_scored": 974,
+ "per_seed_rmse": {
+  "0": 0.2361826678260432,
+  "1": 0.23618897704820366,
+  "2": 0.2361990872852556,
+  "3": 0.23629523254075252,
+  "4": 0.23622917870565865,
+  "5": 0.2361597065162355,
+  "6": 0.23618865585601947,
+  "7": 0.23622874790442652,
+  "8": 0.2362571430870571,
+  "9": 0.23616697097115555
+ },
+ "mean_rmse": 0.23620963677408074,
+ "sd_over_seeds": 4.262191389167355e-05,
+ "min_rmse": 0.2361597065162355,
+ "max_rmse": 0.23629523254075252,
+ "median_rmse": 0.23619403216672963,
+ "mean_ci95_block_bootstrap": [
+  0.19979788092561193,
+  0.27433278064017236
+ ],
+ "bootstrap": {
+  "block": 25,
+  "n_boot": 4000,
+  "seed": 0,
+  "resampled_indices_shared_across_seeds": true
+ },
+ "prob_bootstrap_mean_below_target": 0.204,
+ "target": 0.221,
+ "max_per_seed_ci95_hi": 0.2743895272188658,
+ "min_per_seed_ci95_lo": 0.19969655748468795,
+ "max_abs_diff_vs_logged_rmse": 0.0,
+ "name": "ct_round2",
+ "frozen_run_summary": {
+  "n": 10,
+  "mean": 0.23620963677408074,
+  "sd": 4.262191389167355e-05,
+  "min": 0.2361597065162355,
+  "max": 0.23629523254075252
+ },
+ "compare_ref_summary": {
+  "mean_rmse_over_seeds": 0.23620963677408074,
+  "beats_0221_entry_every_seed": false,
+  "fraction_of_other_reference_seeds_beaten": 0.3,
+  "n_our_seeds": 10,
+  "n_reference_seeds": 11
+ },
+ "claim": {
+  "rule": "freeze claim_rule: 'best published result' wording only if the paired 95% upper bound vs the 0.221-entry code (seed 42) is < 0 for EVERY one of our seeds",
+  "beats_0221_entry_every_seed": false,
+  "mean_below_0221": false,
+  "wording": "does NOT meet the pre-registered rule for a 'best published result' claim; report the numbers as they are"
+ }
+}

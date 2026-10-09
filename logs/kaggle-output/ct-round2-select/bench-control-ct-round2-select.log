@@ -1,0 +1,288 @@
+[{"stream_name":"stdout","time":0.936188648,"data":"[    0.0s] ENV {\"utc_start\": \"2026-10-09 15:22:26\", \"python\": \"3.13.15 (main, Aug  6 2026, 11:06:22) [GCC 13.3.0]\", \"platform\": \"Linux-6.18.48+-x86_64-with-glibc2.39\", \"cpu_count\": 4, \"kernel\": \"sankalpsthakur/bench-control-ct-round2-select\", \"cpu_model\": \"Intel(R) Xeon(R) CPU @ 2.20GHz\", \"mem_total_kb\": 32869452}\n"}
+,{"stream_name":"stdout","time":0.936242919,"data":"[    0.0s] EXPECT {\"repo_head\": \"0509f850a84e9f277c1a85e8170679c71c9bf316\", \"git_tree_ct\": \"120f81f08ff5460b0a8d79758ebc28364ba9eca7\", \"git_tree_ct2\": \"154418ac682ff740359d8e99f7e43891f5ad8ff6\", \"git_blob_prereg\": \"fa233c1af20e9688692abcb1b9220c89a8c31420\", \"data_zip_sha256\": \"eb0fa05851e8a7136846c2e3b61fbef87def78d0852c86ab91b02ac5db541b51\", \"data_mat_sha256\": \"cb2f88d4388be4d3f2a24c6402fba804976aac5f2e1f26cda59ea0a38d016eab\", \"executable\": [\"ct/run_ref_seeds.sh\"]}\n"}
+,{"stream_name":"stdout","time":0.960376176,"data":"[    0.0s] SHA256 de9be804c519a8b70ebe815621c3112f457804e9b71bc92e076d0aaa247257e4 .gitignore\n"}
+,{"stream_name":"stdout","time":0.960409555,"data":"[    0.0s] SHA256 d7f0e376c8a39a16a09d603fc9eced022ef246d00a67ae9c2bcd2df4f859ad35 PREREGISTRATION-CT-ROUND2.md\n"}
+,{"stream_name":"stdout","time":0.96041513,"data":"[    0.0s] SHA256 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ct/__init__.py\n"}
+,{"stream_name":"stdout","time":0.960419667,"data":"[    0.0s] SHA256 1277793fed339809344d87c80802ce3ab4857c1194ac0a80a0162019c0195edb ct/compare_ref.py\n"}
+,{"stream_name":"stdout","time":0.960424035,"data":"[    0.0s] SHA256 8263777634ac703cd90bb172e493295d64dd1c5b50d152f6a5c29c8560a9ad3b ct/cv.py\n"}
+,{"stream_name":"stdout","time":0.960429002,"data":"[    0.0s] SHA256 a906f367e7fa0a6966bece360177c2d72b9b72218a42db6a9e0bfedd6596770c ct/cv2.py\n"}
+,{"stream_name":"stdout","time":0.960433569,"data":"[    0.0s] SHA256 476bdd7585bcd02f9df2b960302f340bf26f571458bf81054ef2c575f788c9c6 ct/cv_level.py\n"}
+,{"stream_name":"stdout","time":0.960437611,"data":"[    0.0s] SHA256 cc46183acaf0fbbbd2fd5ea9eadf130dfd7ca3815ef40246efc03ce8e374584f ct/edge.py\n"}
+,{"stream_name":"stdout","time":0.960442128,"data":"[    0.0s] SHA256 19daebe0888feeb8a5d48a96400a492ad518ea419702bddfe7305b065779b590 ct/edge_reference.py\n"}
+,{"stream_name":"stdout","time":0.960453981,"data":"[    0.0s] SHA256 a8688ae1918f72550ad8fa90cb4842f8fa185522987da9a6a1083e2b8b4a2ebf ct/final.py\n"}
+,{"stream_name":"stdout","time":0.960458405,"data":"[    0.0s] SHA256 5d106eec8ee1ccc57e476b598f5ad430521a9959e9fd1a581188510e970b00a9 ct/phys.py\n"}
+,{"stream_name":"stdout","time":0.960462737,"data":"[    0.0s] SHA256 ae14575c443fc012189aabaa43fb8c432ce77a86285096debed8e449b80105d4 ct/plots.py\n"}
+,{"stream_name":"stdout","time":0.960467457,"data":"[    0.0s] SHA256 2e730259ab020821f8625f55bfa9bb7b30ce901ab5b973c1ac66ffe7438430c3 ct/protocol.py\n"}
+,{"stream_name":"stdout","time":0.960473814,"data":"[    0.0s] SHA256 e40fd4e88c3ee1dce32240666033bd0456a1c763153a711627a4167a155f7d7b ct/repro_reference.py\n"}
+,{"stream_name":"stdout","time":0.960493371,"data":"[    0.0s] SHA256 4195e4e8d7c7f03401c9617258065f68e93b32ebc12912a14e4ae8f2fae60387 ct/resid_analysis.py\n"}
+,{"stream_name":"stdout","time":0.960514384,"data":"[    0.0s] SHA256 595e5aff3d965673278b2a1d62552b84f4d5ff8c6c2a788c0b9af82f807a031e ct/run_ref_seeds.sh\n"}
+,{"stream_name":"stdout","time":0.960532686,"data":"[    0.0s] SHA256 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 ct2/__init__.py\n"}
+,{"stream_name":"stdout","time":0.96055186,"data":"[    0.0s] SHA256 21ad9d46ebefecf76130b99ccf1c4a8bb6d444ea173b321af422b002256fe830 ct2/final2.py\n"}
+,{"stream_name":"stdout","time":0.960575312,"data":"[    0.0s] SHA256 bd44b34e0353ed71603ad116792a83339d3bedd271f3715d04300b2685d74fac ct2/make_freeze.py\n"}
+,{"stream_name":"stdout","time":0.960598421,"data":"[    0.0s] SHA256 0103cb2640530298621eba4a55ae6a4db69bc37ef877151e5b16aa9ae0926d90 ct2/phys2.py\n"}
+,{"stream_name":"stdout","time":0.960618567,"data":"[    0.0s] SHA256 0f69ddffe0612deabd39aa6a81e0e1f444dceb70224edac7f94c6e89ce08c956 ct2/select2.py\n"}
+,{"stream_name":"stdout","time":0.960641235,"data":"[    0.0s] SHA256 74ca0dfb3f467ce6d2f35a445031ea655f8ce856711f61b20ac3d16d483366ea ct2/selftest.py\n"}
+,{"stream_name":"stdout","time":0.960731245,"data":"[    0.0s] SHA256 55515ac9f3522363752b1e6ff48de11d763b831bed7dddbe77f27fe5b6ef49e4 results/FREEZE_ct_phys8.json\n"}
+,{"stream_name":"stdout","time":0.960740096,"data":"[    0.0s] SHA256 67eb578dda22e62b253ecb1be006ae8e78516487a7aca3a687a2e97b8ca17e35 results/ct_final_ct_phys8.json\n"}
+,{"stream_name":"stdout","time":0.960744468,"data":"[    0.0s] SHA256 49c539f1d46074a43ff73734396ca0be98dc2ce10b7606b13ba4923b479fbe1e tools/ct_data_check.py\n"}
+,{"stream_name":"stdout","time":0.96211585,"data":"[    0.0s] $ /usr/bin/python3 -m pip install -q uv\n"}
+,{"stream_name":"stdout","time":5.285306698,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.8/17.8 MB 83.2 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":8.402325874,"data":"[    7.5s] $ /usr/local/bin/uv venv --python 3.12 /tmp/ctvenv\n"}
+,{"stream_name":"stdout","time":8.416844079,"data":"warning: The `--system` flag has no effect, `uv venv` always ignores virtual environments when finding a Python interpreter; did you mean `--no-managed-python`?\n"}
+,{"stream_name":"stdout","time":8.729287835000001,"data":"Using CPython 3.12.3 interpreter at: /usr/bin/python3.12\n"}
+,{"stream_name":"stdout","time":8.729311494,"data":"Creating virtual environment at: /tmp/ctvenv\n"}
+,{"stream_name":"stdout","time":8.730430879,"data":"Activate with: source /tmp/ctvenv/bin/activate\n"}
+,{"stream_name":"stdout","time":8.731975763,"data":"[    7.8s] $ /usr/local/bin/uv pip install --python /tmp/ctvenv/bin/python numpy==2.5.3 scipy==1.18.1 jax==0.11.2 jaxlib==0.11.2 nonlinear-benchmarks==1.0.1 matplotlib\u003c3.11 progressbar==2.5 rarfile==4.5 tqdm==4.70.1 requests==2.34.2\n"}
+,{"stream_name":"stdout","time":8.742153336,"data":"Using Python 3.12.3 environment at: /tmp/ctvenv\n"}
+,{"stream_name":"stdout","time":10.389538211,"data":"Resolved 25 packages in 1.64s\n"}
+,{"stream_name":"stdout","time":10.393882387,"data":"   Building progressbar==2.5\n"}
+,{"stream_name":"stdout","time":10.436164072,"data":"Downloading scipy (33.7MiB)\n"}
+,{"stream_name":"stdout","time":10.436579622,"data":"Downloading numpy (15.9MiB)\n"}
+,{"stream_name":"stdout","time":10.447735998,"data":"Downloading matplotlib (8.4MiB)\n"}
+,{"stream_name":"stdout","time":10.448025564,"data":"Downloading fonttools (5.1MiB)\n"}
+,{"stream_name":"stdout","time":10.45687738,"data":"Downloading kiwisolver (1.4MiB)\n"}
+,{"stream_name":"stdout","time":10.457037955,"data":"Downloading pillow (6.6MiB)\n"}
+,{"stream_name":"stdout","time":10.458342673,"data":"Downloading jax (3.2MiB)\n"}
+,{"stream_name":"stdout","time":10.458625025,"data":"Downloading jaxlib (85.7MiB)\n"}
+,{"stream_name":"stdout","time":11.108674707,"data":"      Built progressbar==2.5\n"}
+,{"stream_name":"stdout","time":11.627196387,"data":" Downloaded kiwisolver\n"}
+,{"stream_name":"stdout","time":12.542998476,"data":" Downloaded jax\n"}
+,{"stream_name":"stdout","time":13.360403306,"data":" Downloaded fonttools\n"}
+,{"stream_name":"stdout","time":15.091730312,"data":" Downloaded pillow\n"}
+,{"stream_name":"stdout","time":16.088069744,"data":" Downloaded matplotlib\n"}
+,{"stream_name":"stdout","time":18.491913845,"data":" Downloaded numpy\n"}
+,{"stream_name":"stdout","time":21.465830538,"data":" Downloaded scipy\n"}
+,{"stream_name":"stdout","time":26.175965542,"data":" Downloaded jaxlib\n"}
+,{"stream_name":"stdout","time":26.176375438,"data":"Prepared 25 packages in 15.78s\n"}
+,{"stream_name":"stdout","time":26.273834974,"data":"Installed 25 packages in 97ms\n"}
+,{"stream_name":"stdout","time":26.273863351,"data":" + certifi==2026.7.22\n"}
+,{"stream_name":"stdout","time":26.273939459,"data":" + charset-normalizer==3.5.2\n"}
+,{"stream_name":"stdout","time":26.274067183,"data":" + contourpy==1.4.0\n"}
+,{"stream_name":"stdout","time":26.274076687,"data":" + cycler==0.12.1\n"}
+,{"stream_name":"stdout","time":26.274080677,"data":" + fonttools==4.66.1\n"}
+,{"stream_name":"stdout","time":26.27410923,"data":" + idna==3.20\n"}
+,{"stream_name":"stdout","time":26.274113927,"data":" + jax==0.11.2\n"}
+,{"stream_name":"stdout","time":26.274117722,"data":" + jaxlib==0.11.2\n"}
+,{"stream_name":"stdout","time":26.27416815,"data":" + kiwisolver==1.5.1\n"}
+,{"stream_name":"stdout","time":26.274229814,"data":" + matplotlib==3.10.9\n"}
+,{"stream_name":"stdout","time":26.274310959,"data":" + ml-dtypes==0.6.0\n"}
+,{"stream_name":"stdout","time":26.274375681,"data":" + nonlinear-benchmarks==1.0.1\n"}
+,{"stream_name":"stdout","time":26.274392387,"data":" + numpy==2.5.3\n"}
+,{"stream_name":"stdout","time":26.274434412,"data":" + opt-einsum==3.4.0\n"}
+,{"stream_name":"stdout","time":26.27448758,"data":" + packaging==26.3\n"}
+,{"stream_name":"stdout","time":26.274531838,"data":" + pillow==12.3.0\n"}
+,{"stream_name":"stdout","time":26.274570631,"data":" + progressbar==2.5\n"}
+,{"stream_name":"stdout","time":26.274632154,"data":" + pyparsing==3.3.3\n"}
+,{"stream_name":"stdout","time":26.274673942,"data":" + python-dateutil==2.9.0.post0\n"}
+,{"stream_name":"stdout","time":26.274756873,"data":" + rarfile==4.5\n"}
+,{"stream_name":"stdout","time":26.274886003,"data":" + requests==2.34.2\n"}
+,{"stream_name":"stdout","time":26.274894768,"data":" + scipy==1.18.1\n"}
+,{"stream_name":"stdout","time":26.274899416,"data":" + six==1.17.0\n"}
+,{"stream_name":"stdout","time":26.275022566,"data":" + tqdm==4.70.1\n"}
+,{"stream_name":"stdout","time":26.275032339,"data":" + urllib3==2.8.0\n"}
+,{"stream_name":"stdout","time":26.286162222,"data":"[   25.4s] $ /usr/local/bin/uv pip freeze --python /tmp/ctvenv/bin/python\n"}
+,{"stream_name":"stdout","time":26.296347441,"data":"Using Python 3.12.3 environment at: /tmp/ctvenv\n"}
+,{"stream_name":"stdout","time":26.297069891,"data":"certifi==2026.7.22\n"}
+,{"stream_name":"stdout","time":26.297099427,"data":"charset-normalizer==3.5.2\n"}
+,{"stream_name":"stdout","time":26.297113609,"data":"contourpy==1.4.0\n"}
+,{"stream_name":"stdout","time":26.297117901,"data":"cycler==0.12.1\n"}
+,{"stream_name":"stdout","time":26.297122081,"data":"fonttools==4.66.1\n"}
+,{"stream_name":"stdout","time":26.297125762,"data":"idna==3.20\n"}
+,{"stream_name":"stdout","time":26.297129321,"data":"jax==0.11.2\n"}
+,{"stream_name":"stdout","time":26.297132765,"data":"jaxlib==0.11.2\n"}
+,{"stream_name":"stdout","time":26.297136493,"data":"kiwisolver==1.5.1\n"}
+,{"stream_name":"stdout","time":26.297140047,"data":"matplotlib==3.10.9\n"}
+,{"stream_name":"stdout","time":26.297143669,"data":"ml-dtypes==0.6.0\n"}
+,{"stream_name":"stdout","time":26.29714698,"data":"nonlinear-benchmarks==1.0.1\n"}
+,{"stream_name":"stdout","time":26.297164782,"data":"numpy==2.5.3\n"}
+,{"stream_name":"stdout","time":26.297168529,"data":"opt-einsum==3.4.0\n"}
+,{"stream_name":"stdout","time":26.297171783,"data":"packaging==26.3\n"}
+,{"stream_name":"stdout","time":26.29717493,"data":"pillow==12.3.0\n"}
+,{"stream_name":"stdout","time":26.297178131,"data":"progressbar==2.5\n"}
+,{"stream_name":"stdout","time":26.29718171,"data":"pyparsing==3.3.3\n"}
+,{"stream_name":"stdout","time":26.29718532,"data":"python-dateutil==2.9.0.post0\n"}
+,{"stream_name":"stdout","time":26.297189031,"data":"rarfile==4.5\n"}
+,{"stream_name":"stdout","time":26.2971927,"data":"requests==2.34.2\n"}
+,{"stream_name":"stdout","time":26.29719643,"data":"scipy==1.18.1\n"}
+,{"stream_name":"stdout","time":26.297200427,"data":"six==1.17.0\n"}
+,{"stream_name":"stdout","time":26.297204701,"data":"tqdm==4.70.1\n"}
+,{"stream_name":"stdout","time":26.297207991,"data":"urllib3==2.8.0\n"}
+,{"stream_name":"stdout","time":26.298440433,"data":"[   25.4s] $ /tmp/ctvenv/bin/python -c import sys, json, numpy, scipy, jax, jaxlib, matplotlib, nonlinear_benchmarks, importlib.metadata as m;print('VERSIONS', json.dumps(dict(python=sys.version.split()[0], numpy=numpy.__version__, scipy=scipy.__version__, jax=jax.__version__,jaxlib=jaxlib.__version__, matplotlib=matplotlib.__version__, nonlinear_benchmarks=m.version('nonlinear_benchmarks'))))\n"}
+,{"stream_name":"stdout","time":30.571798148,"data":"VERSIONS {\"python\": \"3.12.3\", \"numpy\": \"2.5.3\", \"scipy\": \"1.18.1\", \"jax\": \"0.11.2\", \"jaxlib\": \"0.11.2\", \"matplotlib\": \"3.10.9\", \"nonlinear_benchmarks\": \"1.0.1\"}\n"}
+,{"stream_name":"stdout","time":30.818771487,"data":"[   29.9s] $ git init -q .\n"}
+,{"stream_name":"stdout","time":30.855364848,"data":"[   29.9s] $ git -c user.name=ct-kernel -c user.email=ct-kernel@localhost add .gitignore ct ct2 PREREGISTRATION-CT-ROUND2.md\n"}
+,{"stream_name":"stdout","time":30.875264131,"data":"[   29.9s] $ git -c user.name=ct-kernel -c user.email=ct-kernel@localhost commit -q -m committed sources, byte-identical to control repo 0509f85\n"}
+,{"stream_name":"stdout","time":30.912154715,"data":"[   30.0s] $ git rev-parse HEAD:ct\n"}
+,{"stream_name":"stdout","time":30.916357243,"data":"120f81f08ff5460b0a8d79758ebc28364ba9eca7\n"}
+,{"stream_name":"stdout","time":30.916647669,"data":"[   30.0s] GIT git_tree_ct 120f81f08ff5460b0a8d79758ebc28364ba9eca7 expected 120f81f08ff5460b0a8d79758ebc28364ba9eca7\n"}
+,{"stream_name":"stdout","time":30.916658183,"data":"[   30.0s] $ git rev-parse HEAD:ct2\n"}
+,{"stream_name":"stdout","time":30.919510717,"data":"154418ac682ff740359d8e99f7e43891f5ad8ff6\n"}
+,{"stream_name":"stdout","time":30.919816818,"data":"[   30.0s] GIT git_tree_ct2 154418ac682ff740359d8e99f7e43891f5ad8ff6 expected 154418ac682ff740359d8e99f7e43891f5ad8ff6\n"}
+,{"stream_name":"stdout","time":30.919828112,"data":"[   30.0s] $ git rev-parse HEAD:PREREGISTRATION-CT-ROUND2.md\n"}
+,{"stream_name":"stdout","time":30.922003824,"data":"fa233c1af20e9688692abcb1b9220c89a8c31420\n"}
+,{"stream_name":"stdout","time":30.922282394,"data":"[   30.0s] GIT git_blob_prereg fa233c1af20e9688692abcb1b9220c89a8c31420 expected fa233c1af20e9688692abcb1b9220c89a8c31420\n"}
+,{"stream_name":"stdout","time":30.923254967,"data":"[   30.0s] $ /tmp/ctvenv/bin/python tools/ct_data_check.py eb0fa05851e8a7136846c2e3b61fbef87def78d0852c86ab91b02ac5db541b51 cb2f88d4388be4d3f2a24c6402fba804976aac5f2e1f26cda59ea0a38d016eab\n"}
+,{"stream_name":"stdout","time":32.150073596,"data":"dataset not found downloading from https://drive.google.com/file/d/1HnQf_gu0g_UlggoBqy2s34l9YJiFdN01/view \n"}
+,{"stream_name":"stdout","time":32.150126296,"data":" in /tmp/ctrepo/data/Cascaded_Tanks/CascadedTanksFiles.zip\n"}
+,{"stream_name":"stdout","time":34.582706186,"data":"extracting file...\n"}
+,{"stream_name":"stdout","time":34.582746134,"data":"save_loc='/tmp/ctrepo/data/Cascaded_Tanks/CascadedTanksFiles.zip'\n"}
+,{"stream_name":"stdout","time":34.657178291,"data":"DATA_CHECK {\"zip_bytes\": 7520592, \"zip_sha256\": \"eb0fa05851e8a7136846c2e3b61fbef87def78d0852c86ab91b02ac5db541b51\", \"mat_bytes\": 24401, \"mat_sha256\": \"cb2f88d4388be4d3f2a24c6402fba804976aac5f2e1f26cda59ea0a38d016eab\", \"n_train\": 1024, \"n_test\": 1024, \"Ts\": 4.0, \"test_state_init_window\": 50, \"url\": \"https://drive.google.com/file/d/1HnQf_gu0g_UlggoBqy2s34l9YJiFdN01/view\", \"match_expected\": true}\n"}
+,{"stream_name":"stdout","time":34.739802538,"data":"[   33.8s] $ /tmp/ctvenv/bin/python ct2/selftest.py equiv-C equiv-F1 limits warm-S12 job-S12:G0:fold1 job-S01:G2:fold3 job-S13:G0:level\n"}
+,{"stream_name":"stdout","time":39.989916456,"data":"equiv C: max |ct.phys - ct2.phys2| = 8.882e-16 (range of y 3.28..10.00)\n"}
+,{"stream_name":"stdout","time":41.118186683,"data":"equiv ('d1', 'd2'): max |ct.phys - ct2.phys2| = 0.000e+00 (range of y 3.28..10.00)\n"}
+,{"stream_name":"stdout","time":42.308610148,"data":"limit ('w3',): max |y - y_base| = 8.882e-16\n"}
+,{"stream_name":"stdout","time":42.968467033,"data":"limit ('tp',): max |y - y_base| = 5.485e-05\n"}
+,{"stream_name":"stdout","time":43.568512664,"data":"limit ('to',): max |y - y_base| = 8.882e-16\n"}
+,{"stream_name":"stdout","time":43.732343527,"data":"limit tp=1e9: max |y - y_base(const u)| = 6.363e-07\n"}
+,{"stream_name":"stdout","time":45.170064273,"data":"warm S12: loss at warm vector 0.066818 vs C 0.066929  (rel 1.65e-03)\n"}
+,{"stream_name":"stdout","time":58.764539014,"data":"job S12:G0:fold1: {\"n_numbers\": 13, \"val_rmse\": 0.244, \"train_loss\": 0.0731, \"secs\": 13.6} wall 14s\n"}
+,{"stream_name":"stdout","time":58.76458087,"data":"starts [('warm', 0.0731, 2), ('rand', 3.3547, 2), ('rand', 0.7125, 2), ('rand', 1.5291, 2), ('rand', 1.1793, 2)]\n"}
+,{"stream_name":"stdout","time":73.025202493,"data":"job S01:G2:fold3: {\"n_numbers\": 11, \"val_rmse\": 0.2256, \"train_loss\": 0.0722, \"secs\": 14.3} wall 14s\n"}
+,{"stream_name":"stdout","time":73.025258112,"data":"starts [('warm', 0.0722, 2), ('rand', 1.6506, 2), ('rand', 4.8122, 2), ('rand', 4.4998, 2), ('rand', 6.8953, 2)]\n"}
+,{"stream_name":"stdout","time":82.371983547,"data":"job S13:G0:level: {\"n_numbers\": 10, \"rmse_masked\": 0.6764, \"rmse_unmasked\": 1.0687, \"train_loss\": 1.1422, \"secs\": 9.3} wall 9s\n"}
+,{"stream_name":"stdout","time":82.372026023,"data":"starts [('rand', 1.1422, 2), ('rand', 1.5948, 1), ('rand', 1.5551, 2), ('rand', 2.6583, 2), ('rand', 2.881, 2), ('rand', 1.1908, 2)]\n"}
+,{"stream_name":"stdout","time":82.372031623,"data":"OK\n"}
+,{"stream_name":"stdout","time":82.76121752,"data":"[   81.8s] $ /tmp/ctvenv/bin/python ct2/select2.py --out /kaggle/working/out/smoke --workers 4 --maxiter-scale 0.005 --only S00,S01,S13\n"}
+,{"stream_name":"stdout","time":86.508843297,"data":"[15:23:51 +     0s] stage 1 wave 1: ['S00', 'S13']\n"}
+,{"stream_name":"stdout","time":116.743365362,"data":"[15:24:22 +    30s] S00/G0 fold0: val RMSE 0.3533  train loss 0.33736  24s\n"}
+,{"stream_name":"stdout","time":117.623244059,"data":"[15:24:23 +    31s] S00/G0 fold1: val RMSE 0.8075  train loss 0.93030  25s\n"}
+,{"stream_name":"stdout","time":118.409335997,"data":"[15:24:23 +    32s] S00/G0 fold2: val RMSE 0.7702  train loss 0.30044  26s\n"}
+,{"stream_name":"stdout","time":118.627891972,"data":"[15:24:24 +    32s] S00/G0 fold3: val RMSE 1.1603  train loss 0.99079  26s\n"}
+,{"stream_name":"stdout","time":125.209413685,"data":"[15:24:30 +    39s] S00/G0 level: masked RMSE 0.4543  unmasked 0.6723  8s\n"}
+,{"stream_name":"stdout","time":133.576213193,"data":"[15:24:38 +    47s] S13/G0 fold0: val RMSE 1.0425  train loss 1.11797  16s\n"}
+,{"stream_name":"stdout","time":135.155642131,"data":"[15:24:40 +    49s] S13/G0 fold1: val RMSE 0.5616  train loss 0.34382  17s\n"}
+,{"stream_name":"stdout","time":136.054488788,"data":"[15:24:41 +    50s] S13/G0 fold2: val RMSE 0.8393  train loss 1.20995  17s\n"}
+,{"stream_name":"stdout","time":136.358794912,"data":"[15:24:41 +    50s] S13/G0 fold3: val RMSE 0.7550  train loss 0.83235  11s\n"}
+,{"stream_name":"stdout","time":137.694157734,"data":"[15:24:43 +    51s] S13/G0 level: masked RMSE 0.6764  unmasked 1.0687  4s\n"}
+,{"stream_name":"stdout","time":137.694635581,"data":"[15:24:43 +    51s] reproduction gate S00: CV 0.8241 (round 1: 0.2089, tol 0.003) -\u003e FAIL\n"}
+,{"stream_name":"stdout","time":137.694914319,"data":"[15:24:43 +    51s] stage 1 wave 2: ['S01']\n"}
+,{"stream_name":"stdout","time":158.109385425,"data":"[15:25:03 +    72s] S01/G0 fold3: val RMSE 1.3639  train loss 0.64467  20s\n"}
+,{"stream_name":"stdout","time":158.631194362,"data":"[15:25:04 +    72s] S01/G0 fold2: val RMSE 0.3896  train loss 0.18711  21s\n"}
+,{"stream_name":"stdout","time":158.733938388,"data":"[15:25:04 +    72s] S01/G0 fold1: val RMSE 0.3704  train loss 0.24974  21s\n"}
+,{"stream_name":"stdout","time":159.217144427,"data":"[15:25:04 +    73s] S01/G0 fold0: val RMSE 0.3365  train loss 0.30171  22s\n"}
+,{"stream_name":"stdout","time":162.405817419,"data":"[15:25:07 +    76s] S01/G0 level: masked RMSE 0.2851  unmasked 0.5920  4s\n"}
+,{"stream_name":"stdout","time":162.406224538,"data":"[15:25:07 +    76s] rule 1 -\u003e S00 {\"best\": \"S01\", \"best_cv\": 0.752077207868849, \"se_best\": 0.28696599648688204, \"threshold\": 1.039043204355731, \"eligible\": [\"S00\", \"S01\", \"S13\"], \"tied_on_size\": [\"S00\", \"S13\"], \"tied_on_level\": [\"S00\"]}\n"}
+,{"stream_name":"stdout","time":162.406779922,"data":"[15:25:07 +    76s] stage 2 on S00 : ['G3', 'G1', 'G2']\n"}
+,{"stream_name":"stdout","time":175.913147774,"data":"[15:25:21 +    89s] S00/G3 fold0: val RMSE 0.2887  train loss 0.25628  14s\n"}
+,{"stream_name":"stdout","time":177.890876156,"data":"[15:25:23 +    91s] S00/G3 fold1: val RMSE 0.3682  train loss 0.25019  16s\n"}
+,{"stream_name":"stdout","time":179.009399283,"data":"[15:25:24 +    93s] S00/G3 fold2: val RMSE 0.7131  train loss 0.27953  17s\n"}
+,{"stream_name":"stdout","time":183.603978212,"data":"[15:25:29 +    97s] S00/G3 level: masked RMSE 0.2876  unmasked 0.5910  8s\n"}
+,{"stream_name":"stdout","time":192.275418343,"data":"[15:25:37 +   106s] S00/G3 fold3: val RMSE 1.3653  train loss 0.64536  17s\n"}
+,{"stream_name":"stdout","time":194.881651645,"data":"[15:25:40 +   108s] S00/G1 fold0: val RMSE 0.3489  train loss 0.12891  17s\n"}
+,{"stream_name":"stdout","time":197.318356444,"data":"[15:25:42 +   111s] S00/G1 fold1: val RMSE 0.4707  train loss 0.14610  18s\n"}
+,{"stream_name":"stdout","time":202.729995893,"data":"[15:25:48 +   116s] S00/G1 fold2: val RMSE 0.6646  train loss 0.12268  19s\n"}
+,{"stream_name":"stdout","time":203.382133802,"data":"[15:25:48 +   117s] S00/G1 fold3: val RMSE 1.5724  train loss 0.22212  11s\n"}
+,{"stream_name":"stdout","time":204.579029746,"data":"[15:25:49 +   118s] S00/G1 level: masked RMSE 0.4019  unmasked 0.6722  10s\n"}
+,{"stream_name":"stdout","time":221.575561603,"data":"[15:26:06 +   135s] S00/G2 fold0: val RMSE 0.3195  train loss 0.30703  24s\n"}
+,{"stream_name":"stdout","time":223.788293081,"data":"[15:26:09 +   137s] S00/G2 level: masked RMSE 0.4062  unmasked 0.6190  2s\n"}
+,{"stream_name":"stdout","time":226.440532949,"data":"[15:26:11 +   140s] S00/G2 fold1: val RMSE 0.5710  train loss 0.64261  24s\n"}
+,{"stream_name":"stdout","time":227.194379056,"data":"[15:26:12 +   141s] S00/G2 fold2: val RMSE 0.7048  train loss 0.29047  24s\n"}
+,{"stream_name":"stdout","time":227.741458488,"data":"[15:26:13 +   141s] S00/G2 fold3: val RMSE 1.1214  train loss 0.67602  23s\n"}
+,{"stream_name":"stdout","time":227.74212835,"data":"[15:26:13 +   141s] rule 2 -\u003e G3 {\"best\": \"G2\", \"best_cv\": 0.7386579495284754, \"se_best\": 0.169704809789489, \"threshold\": 0.9083627593179644, \"eligible\": [\"G0\", \"G3\", \"G1\", \"G2\"], \"tied_on_level\": [\"G3\"]}\n"}
+,{"stream_name":"stdout","time":227.742872667,"data":"[15:26:13 +   141s] dry run: S00 + G3, 16 starts x 600 iterations, seed 0 (train only)\n"}
+,{"stream_name":"stdout","time":237.77202258,"data":"[15:26:23 +   151s] dry run train RMSE 0.33862  (10s)\n"}
+,{"stream_name":"stdout","time":237.7734704,"data":"[15:26:23 +   151s] selection done: S00 G3 identical to ct_phys8: False elapsed 151s\n"}
+,{"stream_name":"stdout","time":238.757241855,"data":"[  237.8s] $ /tmp/ctvenv/bin/python ct2/select2.py --out /kaggle/working/out/select --workers 4 --deadline-min 100\n"}
+,{"stream_name":"stdout","time":242.540523892,"data":"[15:26:27 +     0s] stage 1 wave 1: ['S00', 'S13']\n"}
+,{"stream_name":"stdout","time":324.499393091,"data":"[15:27:49 +    82s] S00/G0 fold0: val RMSE 0.1387  train loss 0.03787  76s\n"}
+,{"stream_name":"stdout","time":450.695683011,"data":"[15:29:56 +   208s] S00/G0 fold3: val RMSE 0.2465  train loss 0.02601  202s\n"}
+,{"stream_name":"stdout","time":461.072109952,"data":"[15:30:06 +   219s] S00/G0 fold2: val RMSE 0.1773  train loss 0.03147  212s\n"}
+,{"stream_name":"stdout","time":469.73673877,"data":"[15:30:15 +   227s] S00/G0 fold1: val RMSE 0.2518  train loss 0.02793  221s\n"}
+,{"stream_name":"stdout","time":594.069275571,"data":"[15:32:19 +   352s] S00/G0 level: masked RMSE 0.3959  unmasked 0.1640  270s\n"}
+,{"stream_name":"stdout","time":662.019308833,"data":"[15:33:27 +   419s] S13/G0 fold0: val RMSE 0.2233  train loss 0.03645  211s\n"}
+,{"stream_name":"stdout","time":775.346842358,"data":"[15:35:20 +   533s] S13/G0 fold2: val RMSE 0.1992  train loss 0.03382  306s\n"}
+,{"stream_name":"stdout","time":852.722661975,"data":"[15:36:38 +   610s] S13/G0 fold3: val RMSE 0.2368  train loss 0.03131  259s\n"}
+,{"stream_name":"stdout","time":870.764847693,"data":"[15:36:56 +   628s] S13/G0 fold1: val RMSE 0.2523  train loss 0.02919  410s\n"}
+,{"stream_name":"stdout","time":1044.314053031,"data":"[15:39:49 +   802s] S13/G0 level: masked RMSE 0.3676  unmasked 0.1749  382s\n"}
+,{"stream_name":"stdout","time":1044.314763354,"data":"[15:39:49 +   802s] reproduction gate S00: CV 0.2091 (round 1: 0.2089, tol 0.003) -\u003e PASS\n"}
+,{"stream_name":"stdout","time":1044.315995501,"data":"[15:39:49 +   802s] stage 1 wave 2: ['S01', 'S02', 'S03', 'S04', 'S05', 'S06', 'S07', 'S08', 'S09', 'S10', 'S11', 'S12']\n"}
+,{"stream_name":"stdout","time":1216.653621849,"data":"[15:42:42 +   974s] S01/G0 fold0: val RMSE 0.1484  train loss 0.03477  172s\n"}
+,{"stream_name":"stdout","time":1343.053118293,"data":"[15:44:48 +  1101s] S01/G0 fold3: val RMSE 0.2288  train loss 0.02326  299s\n"}
+,{"stream_name":"stdout","time":1380.070601853,"data":"[15:45:25 +  1138s] S01/G0 fold1: val RMSE 0.2518  train loss 0.02469  336s\n"}
+,{"stream_name":"stdout","time":1404.093412752,"data":"[15:45:49 +  1162s] S01/G0 fold2: val RMSE 0.1646  train loss 0.02908  360s\n"}
+,{"stream_name":"stdout","time":1577.028642039,"data":"[15:48:42 +  1334s] S02/G0 fold0: val RMSE 0.1555  train loss 0.03066  234s\n"}
+,{"stream_name":"stdout","time":1647.58841694,"data":"[15:49:53 +  1405s] S02/G0 fold1: val RMSE 0.2253  train loss 0.02353  268s\n"}
+,{"stream_name":"stdout","time":1693.971726821,"data":"[15:50:39 +  1451s] S01/G0 level: masked RMSE 0.3514  unmasked 0.1544  477s\n"}
+,{"stream_name":"stdout","time":1764.450446847,"data":"[15:51:49 +  1522s] S02/G0 fold2: val RMSE 0.2009  train loss 0.02454  360s\n"}
+,{"stream_name":"stdout","time":1893.466055974,"data":"[15:53:58 +  1651s] S03/G0 fold0: val RMSE 0.1386  train loss 0.03787  200s\n"}
+,{"stream_name":"stdout","time":1986.545308188,"data":"[15:55:31 +  1744s] S02/G0 fold3: val RMSE 0.1852  train loss 0.02135  410s\n"}
+,{"stream_name":"stdout","time":2038.242195958,"data":"[15:56:23 +  1796s] S03/G0 fold1: val RMSE 0.2518  train loss 0.02793  274s\n"}
+,{"stream_name":"stdout","time":2102.149246682,"data":"[15:57:27 +  1860s] S02/G0 level: masked RMSE 0.3381  unmasked 0.1527  455s\n"}
+,{"stream_name":"stdout","time":2131.262464041,"data":"[15:57:56 +  1889s] S03/G0 fold2: val RMSE 0.1767  train loss 0.03147  238s\n"}
+,{"stream_name":"stdout","time":2305.751145634,"data":"[16:00:51 +  2063s] S04/G0 fold0: val RMSE 0.1404  train loss 0.03787  204s\n"}
+,{"stream_name":"stdout","time":2318.017399008,"data":"[16:01:03 +  2075s] S03/G0 fold3: val RMSE 0.2502  train loss 0.02396  332s\n"}
+,{"stream_name":"stdout","time":2384.624359667,"data":"[16:02:10 +  2142s] S04/G0 fold1: val RMSE 0.2523  train loss 0.02793  253s\n"}
+,{"stream_name":"stdout","time":2439.634353176,"data":"[16:03:05 +  2197s] S03/G0 level: masked RMSE 0.3961  unmasked 0.1640  401s\n"}
+,{"stream_name":"stdout","time":2523.756447953,"data":"[16:04:29 +  2281s] S04/G0 fold3: val RMSE 0.2342  train loss 0.02439  206s\n"}
+,{"stream_name":"stdout","time":2671.196657201,"data":"[16:06:56 +  2429s] S04/G0 fold2: val RMSE 0.1778  train loss 0.03139  365s\n"}
+,{"stream_name":"stdout","time":2693.220811075,"data":"[16:07:18 +  2451s] S04/G0 level: masked RMSE 0.3961  unmasked 0.1639  309s\n"}
+,{"stream_name":"stdout","time":2733.905573913,"data":"[16:07:59 +  2491s] S05/G0 fold0: val RMSE 0.1463  train loss 0.03644  294s\n"}
+,{"stream_name":"stdout","time":2915.852436821,"data":"[16:11:01 +  2673s] S05/G0 fold1: val RMSE 0.2477  train loss 0.02782  392s\n"}
+,{"stream_name":"stdout","time":2996.625755443,"data":"[16:12:22 +  2754s] S05/G0 fold2: val RMSE 0.1686  train loss 0.03086  325s\n"}
+,{"stream_name":"stdout","time":3198.358537942,"data":"[16:15:43 +  2956s] S05/G0 fold3: val RMSE 0.3421  train loss 0.02262  505s\n"}
+,{"stream_name":"stdout","time":3226.471762667,"data":"[16:16:11 +  2984s] S06/G0 fold0: val RMSE 0.2076  train loss 0.03185  311s\n"}
+,{"stream_name":"stdout","time":3256.72948205,"data":"[16:16:42 +  3014s] S06/G0 fold1: val RMSE 0.2395  train loss 0.02696  260s\n"}
+,{"stream_name":"stdout","time":3475.292452357,"data":"[16:20:20 +  3233s] S05/G0 level: masked RMSE 0.3985  unmasked 0.1631  741s\n"}
+,{"stream_name":"stdout","time":3511.164047533,"data":"[16:20:56 +  3269s] S06/G0 fold2: val RMSE 0.2376  train loss 0.02376  313s\n"}
+,{"stream_name":"stdout","time":3533.765488575,"data":"[16:21:19 +  3291s] S06/G0 fold3: val RMSE 0.2669  train loss 0.02445  307s\n"}
+,{"stream_name":"stdout","time":3627.674434534,"data":"[16:22:53 +  3385s] S06/G0 level: masked RMSE 0.4051  unmasked 0.1609  371s\n"}
+,{"stream_name":"stdout","time":3679.57641835,"data":"[16:23:44 +  3437s] S07/G0 fold0: val RMSE 0.1367  train loss 0.03755  204s\n"}
+,{"stream_name":"stdout","time":3694.272220287,"data":"[16:23:59 +  3452s] S07/G0 fold2: val RMSE 0.1764  train loss 0.03116  160s\n"}
+,{"stream_name":"stdout","time":3777.213854784,"data":"[16:25:22 +  3535s] S07/G0 fold1: val RMSE 0.2507  train loss 0.02500  266s\n"}
+,{"stream_name":"stdout","time":3784.787325565,"data":"[16:25:30 +  3542s] S07/G0 fold3: val RMSE 0.2466  train loss 0.02584  157s\n"}
+,{"stream_name":"stdout","time":4153.777594614,"data":"[16:31:39 +  3911s] S08/G0 fold0: val RMSE 0.1519  train loss 0.03448  460s\n"}
+,{"stream_name":"stdout","time":4174.165789739,"data":"[16:31:59 +  3932s] S07/G0 level: masked RMSE 0.3540  unmasked 0.1547  495s\n"}
+,{"stream_name":"stdout","time":4259.837367632,"data":"[16:33:25 +  4017s] S08/G0 fold1: val RMSE 0.2460  train loss 0.02401  483s\n"}
+,{"stream_name":"stdout","time":4330.395458459,"data":"[16:34:35 +  4088s] S08/G0 fold2: val RMSE 0.2352  train loss 0.02697  546s\n"}
+,{"stream_name":"stdout","time":4700.324571926,"data":"[16:40:45 +  4458s] S09/G0 fold1: val RMSE 0.2207  train loss 0.02106  370s\n"}
+,{"stream_name":"stdout","time":4734.628939833,"data":"[16:41:20 +  4492s] S08/G0 fold3: val RMSE 0.2367  train loss 0.02578  581s\n"}
+,{"stream_name":"stdout","time":4735.39698133,"data":"[16:41:20 +  4493s] S09/G0 fold0: val RMSE 0.1868  train loss 0.02625  476s\n"}
+,{"stream_name":"stdout","time":4817.143499001,"data":"[16:42:42 +  4575s] S08/G0 level: masked RMSE 0.3723  unmasked 0.1596  643s\n"}
+,{"stream_name":"stdout","time":5156.973755204,"data":"[16:48:22 +  4914s] S10/G0 fold0: val RMSE 0.1476  train loss 0.03477  340s\n"}
+,{"stream_name":"stdout","time":5295.213567496,"data":"[16:50:40 +  5053s] S09/G0 level: masked RMSE 0.3277  unmasked 0.1475  560s\n"}
+,{"stream_name":"stdout","time":5379.952799568,"data":"[16:52:05 +  5137s] S09/G0 fold2: val RMSE 0.2084  train loss 0.02198  680s\n"}
+,{"stream_name":"stdout","time":5417.422469124,"data":"[16:52:42 +  5175s] S09/G0 fold3: val RMSE 0.2462  train loss 0.02285  683s\n"}
+,{"stream_name":"stdout","time":5470.772789995,"data":"[16:53:36 +  5228s] S10/G0 fold1: val RMSE 0.2519  train loss 0.02470  314s\n"}
+,{"stream_name":"stdout","time":5638.755371065,"data":"[16:56:24 +  5396s] S10/G0 fold2: val RMSE 0.1641  train loss 0.02916  344s\n"}
+,{"stream_name":"stdout","time":5653.561347699,"data":"[16:56:38 +  5411s] S10/G0 fold3: val RMSE 0.2852  train loss 0.02484  274s\n"}
+,{"stream_name":"stdout","time":5716.940172343,"data":"[16:57:42 +  5474s] S11/G0 fold0: val RMSE 0.1386  train loss 0.03787  246s\n"}
+,{"stream_name":"stdout","time":5886.485814402,"data":"[17:00:31 +  5644s] S11/G0 fold2: val RMSE 0.1773  train loss 0.03147  233s\n"}
+,{"stream_name":"stdout","time":5978.357193786,"data":"[17:02:03 +  5736s] S11/G0 fold1: val RMSE 0.2518  train loss 0.02793  340s\n"}
+,{"stream_name":"stdout","time":5988.142528382,"data":"[17:02:13 +  5746s] S10/G0 level: masked RMSE 0.3514  unmasked 0.1544  571s\n"}
+,{"stream_name":"stdout","time":5996.976165837,"data":"[17:02:22 +  5754s] S11/G0 fold3: val RMSE 0.2465  train loss 0.02601  280s\n"}
+,{"stream_name":"stdout","time":6355.042051325,"data":"[17:08:20 +  6113s] S11/G0 level: masked RMSE 0.3968  unmasked 0.1639  469s\n"}
+,{"stream_name":"stdout","time":6355.042363822,"data":"[17:08:20 +  6113s] S12/G0 fold3: NO RESULT deadline\n"}
+,{"stream_name":"stdout","time":6355.042756325,"data":"[17:08:20 +  6113s] S12/G0 level: NO RESULT deadline\n"}
+,{"stream_name":"stdout","time":6377.176928454,"data":"[17:08:42 +  6135s] S12/G0 fold0: val RMSE 0.1889  train loss 0.02624  399s\n"}
+,{"stream_name":"stdout","time":6448.67863743,"data":"[17:09:54 +  6206s] S12/G0 fold1: val RMSE 0.2226  train loss 0.02106  460s\n"}
+,{"stream_name":"stdout","time":6472.662902972,"data":"[17:10:18 +  6230s] S12/G0 fold2: val RMSE 0.2062  train loss 0.02204  476s\n"}
+,{"stream_name":"stdout","time":6472.665337876,"data":"[17:10:18 +  6230s] rule 1 -\u003e S02 {\"best\": \"S02\", \"best_cv\": 0.1934013649368877, \"se_best\": 0.014392589819796619, \"threshold\": 0.20779395475668433, \"eligible\": [\"S01\", \"S02\", \"S04\"], \"tied_on_size\": [\"S01\", \"S02\", \"S04\"], \"tied_on_level\": [\"S02\"]}\n"}
+,{"stream_name":"stdout","time":6472.666452106,"data":"[17:10:18 +  6230s] stage 2 on S02 : ['G3', 'G1', 'G2']\n"}
+,{"stream_name":"stdout","time":6472.670142001,"data":"[17:10:18 +  6230s] S02/G3 fold0: NO RESULT deadline\n"}
+,{"stream_name":"stdout","time":6472.671253194,"data":"[17:10:18 +  6230s] S02/G3 fold1: NO RESULT deadline\n"}
+,{"stream_name":"stdout","time":6472.671557021,"data":"[17:10:18 +  6230s] S02/G3 fold3: NO RESULT deadline\n"}
+,{"stream_name":"stdout","time":6472.671742924,"data":"[17:10:18 +  6230s] S02/G3 fold2: NO RESULT deadline\n"}
+,{"stream_name":"stdout","time":6472.671928192,"data":"[17:10:18 +  6230s] S02/G3 level: NO RESULT deadline\n"}
+,{"stream_name":"stdout","time":6472.672113284,"data":"[17:10:18 +  6230s] S02/G1 fold2: NO RESULT deadline\n"}
+,{"stream_name":"stdout","time":6472.672269605,"data":"[17:10:18 +  6230s] S02/G1 fold1: NO RESULT deadline\n"}
+,{"stream_name":"stdout","time":6472.672413491,"data":"[17:10:18 +  6230s] S02/G1 fold3: NO RESULT deadline\n"}
+,{"stream_name":"stdout","time":6472.672648718,"data":"[17:10:18 +  6230s] S02/G1 fold0: NO RESULT deadline\n"}
+,{"stream_name":"stdout","time":6472.672812931,"data":"[17:10:18 +  6230s] S02/G1 level: NO RESULT deadline\n"}
+,{"stream_name":"stdout","time":6472.672981891,"data":"[17:10:18 +  6230s] S02/G2 fold0: NO RESULT deadline\n"}
+,{"stream_name":"stdout","time":6472.673166917,"data":"[17:10:18 +  6230s] S02/G2 fold1: NO RESULT deadline\n"}
+,{"stream_name":"stdout","time":6472.673338251,"data":"[17:10:18 +  6230s] S02/G2 fold2: NO RESULT deadline\n"}
+,{"stream_name":"stdout","time":6472.673507887,"data":"[17:10:18 +  6230s] S02/G2 fold3: NO RESULT deadline\n"}
+,{"stream_name":"stdout","time":6472.67365732,"data":"[17:10:18 +  6230s] S02/G2 level: NO RESULT deadline\n"}
+,{"stream_name":"stdout","time":6472.674239216,"data":"[17:10:18 +  6230s] rule 2 -\u003e G0 {\"best\": \"G0\", \"best_cv\": 0.1934013649368877, \"se_best\": 0.014392589819796619, \"threshold\": 0.20779395475668433, \"eligible\": [\"G0\"], \"tied_on_level\": [\"G0\"]}\n"}
+,{"stream_name":"stdout","time":6472.675691087,"data":"[17:10:18 +  6230s] dry run: S02 + G0, 8 starts x 600 iterations, seed 0 (train only)\n"}
+,{"stream_name":"stdout","time":6811.752694584,"data":"[17:15:57 +  6569s] dry run train RMSE 0.16281  (339s)\n"}
+,{"stream_name":"stdout","time":6811.754208037,"data":"[17:15:57 +  6569s] selection done: S02 G0 identical to ct_phys8: False elapsed 6569s\n"}
+,{"stream_name":"stdout","time":6812.756551028,"data":"[ 6811.8s] ALL STAGES DONE\n"}
+,{"stream_name":"stdout","time":6812.760491276,"data":"[ 6811.8s] elapsed 6812 s\n"}
+,{"stream_name":"stderr","time":6815.355032992,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":6815.355072981,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":6815.701068562,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":6815.701113754,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":6816.800106011,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":6818.044946803,"data":"[NbConvertApp] Writing 394799 bytes to __results__.html\n"}
+]

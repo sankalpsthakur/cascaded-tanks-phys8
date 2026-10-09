@@ -1,0 +1,83 @@
+{
+ "name": "ct_round2",
+ "seed": 0,
+ "structure": "S02",
+ "free": [
+  "k1",
+  "r2",
+  "k3",
+  "k4",
+  "beta",
+  "a",
+  "b4",
+  "cA",
+  "w3"
+ ],
+ "theta": {
+  "k1": 0.1534921199964163,
+  "r2": 0.995338927142441,
+  "k3": 0.1815927960792691,
+  "k4": 0.2033865713097371,
+  "beta": 0.7161538283027421,
+  "a": 1.4657099025974838,
+  "b4": 0.9857996845272035,
+  "cA": -0.1268067404007169,
+  "w3": -0.13996152211318966
+ },
+ "x0_train": [
+  5.568010078654481,
+  3.6962015844655403
+ ],
+ "train_rmse_in_results": 0.16280935018060147,
+ "host": {
+  "platform": "linux",
+  "cpu": "Intel(R) Xeon(R) CPU @ 2.20GHz",
+  "cpu_count": 4
+ },
+ "n_params_free": 9,
+ "n_numbers_incl_x0": 11,
+ "bytes_npy_containers": {
+  "fp32_bytes": 172,
+  "fp16_bytes": 150,
+  "int8_bytes": 513
+ },
+ "raw_payload_bytes": {
+  "fp32": 44,
+  "fp16": 22,
+  "int8": 15
+ },
+ "quantisation_train_record": {
+  "fp64": {
+   "train_rmse": 0.16280935018060147,
+   "delta_vs_fp64": 0.0,
+   "max_abs_dev_of_trajectory_vs_fp64": 0.0,
+   "max_relative_parameter_error": 0.0,
+   "finite": true
+  },
+  "fp32": {
+   "train_rmse": 0.1628093501727924,
+   "delta_vs_fp64": -7.80905895503281e-12,
+   "max_abs_dev_of_trajectory_vs_fp64": 8.586190745063504e-07,
+   "max_relative_parameter_error": 4.0461752221070665e-08,
+   "finite": true
+  },
+  "fp16": {
+   "train_rmse": 0.1629303925519605,
+   "delta_vs_fp64": 0.0001210423713590425,
+   "max_abs_dev_of_trajectory_vs_fp64": 0.015078253498092664,
+   "max_relative_parameter_error": 0.00037957806908800777,
+   "finite": true
+  },
+  "int8_per_tensor": {
+   "train_rmse": 1.2364320945753189,
+   "delta_vs_fp64": 1.0736227443947175,
+   "max_abs_dev_of_trajectory_vs_fp64": 2.274749685729292,
+   "max_relative_parameter_error": 0.14253680372769886,
+   "finite": true
+  }
+ },
+ "c99": {
+  "applicable": false,
+  "reason": "ct/edge.py's C99 emitter does not cover w3"
+ }
+}

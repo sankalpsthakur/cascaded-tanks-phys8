@@ -1,0 +1,44 @@
+{
+ "structure": "S02",
+ "n_params_free": 9,
+ "n_numbers_incl_x0": 11,
+ "raw_payload_bytes": {
+  "fp32": 44,
+  "fp16": 22,
+  "int8": 15
+ }
+}
+{
+ "fp64": {
+  "train_rmse": 0.16280935018060147,
+  "delta_vs_fp64": 0.0,
+  "max_abs_dev_of_trajectory_vs_fp64": 0.0,
+  "max_relative_parameter_error": 0.0,
+  "finite": true
+ },
+ "fp32": {
+  "train_rmse": 0.1628093501727924,
+  "delta_vs_fp64": -7.80905895503281e-12,
+  "max_abs_dev_of_trajectory_vs_fp64": 8.586190745063504e-07,
+  "max_relative_parameter_error": 4.0461752221070665e-08,
+  "finite": true
+ },
+ "fp16": {
+  "train_rmse": 0.1629303925519605,
+  "delta_vs_fp64": 0.0001210423713590425,
+  "max_abs_dev_of_trajectory_vs_fp64": 0.015078253498092664,
+  "max_relative_parameter_error": 0.00037957806908800777,
+  "finite": true
+ },
+ "int8_per_tensor": {
+  "train_rmse": 1.2364320945753189,
+  "delta_vs_fp64": 1.0736227443947175,
+  "max_abs_dev_of_trajectory_vs_fp64": 2.274749685729292,
+  "max_relative_parameter_error": 0.14253680372769886,
+  "finite": true
+ }
+}
+{
+ "applicable": false,
+ "reason": "ct/edge.py's C99 emitter does not cover w3"
+}

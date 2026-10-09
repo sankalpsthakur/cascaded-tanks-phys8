@@ -1,0 +1,22 @@
+fit seed 2: train RMSE 0.16281  objective 0.026507  567s  (elapsed 575s)
+fit seed 3: train RMSE 0.16281  objective 0.026507  912s  (elapsed 920s)
+fit seed 0: train RMSE 0.16281  objective 0.026507  1002s  (elapsed 1009s)
+fit seed 1: train RMSE 0.16281  objective 0.026507  1080s  (elapsed 1087s)
+fit seed 4: train RMSE 0.16281  objective 0.026507  716s  (elapsed 1291s)
+fit seed 5: train RMSE 0.16281  objective 0.026507  669s  (elapsed 1588s)
+fit seed 6: train RMSE 0.16281  objective 0.026507  988s  (elapsed 1997s)
+fit seed 7: train RMSE 0.16281  objective 0.026507  911s  (elapsed 1998s)
+fit seed 8: train RMSE 0.16281  objective 0.026507  782s  (elapsed 2073s)
+fit seed 9: train RMSE 0.16281  objective 0.026507  616s  (elapsed 2204s)
+GATE train RMSE seed 0 = 0.16281, dry run 0.16281 +- 0.003 -> PASS
+seed 0: test RMSE 0.2362  train 0.1628  95% block-bootstrap CI [0.200, 0.274]
+seed 1: test RMSE 0.2362  train 0.1628  95% block-bootstrap CI [0.200, 0.274]
+seed 2: test RMSE 0.2362  train 0.1628  95% block-bootstrap CI [0.200, 0.274]
+seed 3: test RMSE 0.2363  train 0.1628  95% block-bootstrap CI [0.200, 0.274]
+seed 4: test RMSE 0.2362  train 0.1628  95% block-bootstrap CI [0.200, 0.274]
+seed 5: test RMSE 0.2362  train 0.1628  95% block-bootstrap CI [0.200, 0.274]
+seed 6: test RMSE 0.2362  train 0.1628  95% block-bootstrap CI [0.200, 0.274]
+seed 7: test RMSE 0.2362  train 0.1628  95% block-bootstrap CI [0.200, 0.274]
+seed 8: test RMSE 0.2363  train 0.1628  95% block-bootstrap CI [0.200, 0.274]
+seed 9: test RMSE 0.2362  train 0.1628  95% block-bootstrap CI [0.200, 0.274]
+{"n": 10, "mean": 0.23620963677408074, "sd": 4.262191389167355e-05, "min": 0.2361597065162355, "max": 0.23629523254075252}

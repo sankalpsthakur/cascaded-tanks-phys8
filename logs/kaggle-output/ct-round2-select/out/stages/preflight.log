@@ -1,0 +1,53 @@
+equiv C: max |ct.phys - ct2.phys2| = 8.882e-16 (range of y 3.28..10.00)
+equiv ('d1', 'd2'): max |ct.phys - ct2.phys2| = 0.000e+00 (range of y 3.28..10.00)
+limit ('w3',): max |y - y_base| = 8.882e-16
+limit ('tp',): max |y - y_base| = 5.485e-05
+limit ('to',): max |y - y_base| = 8.882e-16
+limit tp=1e9: max |y - y_base(const u)| = 6.363e-07
+warm S12: loss at warm vector 0.066818 vs C 0.066929  (rel 1.65e-03)
+job S12:G0:fold1: {"n_numbers": 13, "val_rmse": 0.244, "train_loss": 0.0731, "secs": 13.6} wall 14s
+starts [('warm', 0.0731, 2), ('rand', 3.3547, 2), ('rand', 0.7125, 2), ('rand', 1.5291, 2), ('rand', 1.1793, 2)]
+job S01:G2:fold3: {"n_numbers": 11, "val_rmse": 0.2256, "train_loss": 0.0722, "secs": 14.3} wall 14s
+starts [('warm', 0.0722, 2), ('rand', 1.6506, 2), ('rand', 4.8122, 2), ('rand', 4.4998, 2), ('rand', 6.8953, 2)]
+job S13:G0:level: {"n_numbers": 10, "rmse_masked": 0.6764, "rmse_unmasked": 1.0687, "train_loss": 1.1422, "secs": 9.3} wall 9s
+starts [('rand', 1.1422, 2), ('rand', 1.5948, 1), ('rand', 1.5551, 2), ('rand', 2.6583, 2), ('rand', 2.881, 2), ('rand', 1.1908, 2)]
+OK
+[15:23:51 +     0s] stage 1 wave 1: ['S00', 'S13']
+[15:24:22 +    30s] S00/G0 fold0: val RMSE 0.3533  train loss 0.33736  24s
+[15:24:23 +    31s] S00/G0 fold1: val RMSE 0.8075  train loss 0.93030  25s
+[15:24:23 +    32s] S00/G0 fold2: val RMSE 0.7702  train loss 0.30044  26s
+[15:24:24 +    32s] S00/G0 fold3: val RMSE 1.1603  train loss 0.99079  26s
+[15:24:30 +    39s] S00/G0 level: masked RMSE 0.4543  unmasked 0.6723  8s
+[15:24:38 +    47s] S13/G0 fold0: val RMSE 1.0425  train loss 1.11797  16s
+[15:24:40 +    49s] S13/G0 fold1: val RMSE 0.5616  train loss 0.34382  17s
+[15:24:41 +    50s] S13/G0 fold2: val RMSE 0.8393  train loss 1.20995  17s
+[15:24:41 +    50s] S13/G0 fold3: val RMSE 0.7550  train loss 0.83235  11s
+[15:24:43 +    51s] S13/G0 level: masked RMSE 0.6764  unmasked 1.0687  4s
+[15:24:43 +    51s] reproduction gate S00: CV 0.8241 (round 1: 0.2089, tol 0.003) -> FAIL
+[15:24:43 +    51s] stage 1 wave 2: ['S01']
+[15:25:03 +    72s] S01/G0 fold3: val RMSE 1.3639  train loss 0.64467  20s
+[15:25:04 +    72s] S01/G0 fold2: val RMSE 0.3896  train loss 0.18711  21s
+[15:25:04 +    72s] S01/G0 fold1: val RMSE 0.3704  train loss 0.24974  21s
+[15:25:04 +    73s] S01/G0 fold0: val RMSE 0.3365  train loss 0.30171  22s
+[15:25:07 +    76s] S01/G0 level: masked RMSE 0.2851  unmasked 0.5920  4s
+[15:25:07 +    76s] rule 1 -> S00 {"best": "S01", "best_cv": 0.752077207868849, "se_best": 0.28696599648688204, "threshold": 1.039043204355731, "eligible": ["S00", "S01", "S13"], "tied_on_size": ["S00", "S13"], "tied_on_level": ["S00"]}
+[15:25:07 +    76s] stage 2 on S00 : ['G3', 'G1', 'G2']
+[15:25:21 +    89s] S00/G3 fold0: val RMSE 0.2887  train loss 0.25628  14s
+[15:25:23 +    91s] S00/G3 fold1: val RMSE 0.3682  train loss 0.25019  16s
+[15:25:24 +    93s] S00/G3 fold2: val RMSE 0.7131  train loss 0.27953  17s
+[15:25:29 +    97s] S00/G3 level: masked RMSE 0.2876  unmasked 0.5910  8s
+[15:25:37 +   106s] S00/G3 fold3: val RMSE 1.3653  train loss 0.64536  17s
+[15:25:40 +   108s] S00/G1 fold0: val RMSE 0.3489  train loss 0.12891  17s
+[15:25:42 +   111s] S00/G1 fold1: val RMSE 0.4707  train loss 0.14610  18s
+[15:25:48 +   116s] S00/G1 fold2: val RMSE 0.6646  train loss 0.12268  19s
+[15:25:48 +   117s] S00/G1 fold3: val RMSE 1.5724  train loss 0.22212  11s
+[15:25:49 +   118s] S00/G1 level: masked RMSE 0.4019  unmasked 0.6722  10s
+[15:26:06 +   135s] S00/G2 fold0: val RMSE 0.3195  train loss 0.30703  24s
+[15:26:09 +   137s] S00/G2 level: masked RMSE 0.4062  unmasked 0.6190  2s
+[15:26:11 +   140s] S00/G2 fold1: val RMSE 0.5710  train loss 0.64261  24s
+[15:26:12 +   141s] S00/G2 fold2: val RMSE 0.7048  train loss 0.29047  24s
+[15:26:13 +   141s] S00/G2 fold3: val RMSE 1.1214  train loss 0.67602  23s
+[15:26:13 +   141s] rule 2 -> G3 {"best": "G2", "best_cv": 0.7386579495284754, "se_best": 0.169704809789489, "threshold": 0.9083627593179644, "eligible": ["G0", "G3", "G1", "G2"], "tied_on_level": ["G3"]}
+[15:26:13 +   141s] dry run: S00 + G3, 16 starts x 600 iterations, seed 0 (train only)
+[15:26:23 +   151s] dry run train RMSE 0.33862  (10s)
+[15:26:23 +   151s] selection done: S00 G3 identical to ct_phys8: False elapsed 151s

@@ -1,0 +1,94 @@
+[15:26:27 +     0s] stage 1 wave 1: ['S00', 'S13']
+[15:27:49 +    82s] S00/G0 fold0: val RMSE 0.1387  train loss 0.03787  76s
+[15:29:56 +   208s] S00/G0 fold3: val RMSE 0.2465  train loss 0.02601  202s
+[15:30:06 +   219s] S00/G0 fold2: val RMSE 0.1773  train loss 0.03147  212s
+[15:30:15 +   227s] S00/G0 fold1: val RMSE 0.2518  train loss 0.02793  221s
+[15:32:19 +   352s] S00/G0 level: masked RMSE 0.3959  unmasked 0.1640  270s
+[15:33:27 +   419s] S13/G0 fold0: val RMSE 0.2233  train loss 0.03645  211s
+[15:35:20 +   533s] S13/G0 fold2: val RMSE 0.1992  train loss 0.03382  306s
+[15:36:38 +   610s] S13/G0 fold3: val RMSE 0.2368  train loss 0.03131  259s
+[15:36:56 +   628s] S13/G0 fold1: val RMSE 0.2523  train loss 0.02919  410s
+[15:39:49 +   802s] S13/G0 level: masked RMSE 0.3676  unmasked 0.1749  382s
+[15:39:49 +   802s] reproduction gate S00: CV 0.2091 (round 1: 0.2089, tol 0.003) -> PASS
+[15:39:49 +   802s] stage 1 wave 2: ['S01', 'S02', 'S03', 'S04', 'S05', 'S06', 'S07', 'S08', 'S09', 'S10', 'S11', 'S12']
+[15:42:42 +   974s] S01/G0 fold0: val RMSE 0.1484  train loss 0.03477  172s
+[15:44:48 +  1101s] S01/G0 fold3: val RMSE 0.2288  train loss 0.02326  299s
+[15:45:25 +  1138s] S01/G0 fold1: val RMSE 0.2518  train loss 0.02469  336s
+[15:45:49 +  1162s] S01/G0 fold2: val RMSE 0.1646  train loss 0.02908  360s
+[15:48:42 +  1334s] S02/G0 fold0: val RMSE 0.1555  train loss 0.03066  234s
+[15:49:53 +  1405s] S02/G0 fold1: val RMSE 0.2253  train loss 0.02353  268s
+[15:50:39 +  1451s] S01/G0 level: masked RMSE 0.3514  unmasked 0.1544  477s
+[15:51:49 +  1522s] S02/G0 fold2: val RMSE 0.2009  train loss 0.02454  360s
+[15:53:58 +  1651s] S03/G0 fold0: val RMSE 0.1386  train loss 0.03787  200s
+[15:55:31 +  1744s] S02/G0 fold3: val RMSE 0.1852  train loss 0.02135  410s
+[15:56:23 +  1796s] S03/G0 fold1: val RMSE 0.2518  train loss 0.02793  274s
+[15:57:27 +  1860s] S02/G0 level: masked RMSE 0.3381  unmasked 0.1527  455s
+[15:57:56 +  1889s] S03/G0 fold2: val RMSE 0.1767  train loss 0.03147  238s
+[16:00:51 +  2063s] S04/G0 fold0: val RMSE 0.1404  train loss 0.03787  204s
+[16:01:03 +  2075s] S03/G0 fold3: val RMSE 0.2502  train loss 0.02396  332s
+[16:02:10 +  2142s] S04/G0 fold1: val RMSE 0.2523  train loss 0.02793  253s
+[16:03:05 +  2197s] S03/G0 level: masked RMSE 0.3961  unmasked 0.1640  401s
+[16:04:29 +  2281s] S04/G0 fold3: val RMSE 0.2342  train loss 0.02439  206s
+[16:06:56 +  2429s] S04/G0 fold2: val RMSE 0.1778  train loss 0.03139  365s
+[16:07:18 +  2451s] S04/G0 level: masked RMSE 0.3961  unmasked 0.1639  309s
+[16:07:59 +  2491s] S05/G0 fold0: val RMSE 0.1463  train loss 0.03644  294s
+[16:11:01 +  2673s] S05/G0 fold1: val RMSE 0.2477  train loss 0.02782  392s
+[16:12:22 +  2754s] S05/G0 fold2: val RMSE 0.1686  train loss 0.03086  325s
+[16:15:43 +  2956s] S05/G0 fold3: val RMSE 0.3421  train loss 0.02262  505s
+[16:16:11 +  2984s] S06/G0 fold0: val RMSE 0.2076  train loss 0.03185  311s
+[16:16:42 +  3014s] S06/G0 fold1: val RMSE 0.2395  train loss 0.02696  260s
+[16:20:20 +  3233s] S05/G0 level: masked RMSE 0.3985  unmasked 0.1631  741s
+[16:20:56 +  3269s] S06/G0 fold2: val RMSE 0.2376  train loss 0.02376  313s
+[16:21:19 +  3291s] S06/G0 fold3: val RMSE 0.2669  train loss 0.02445  307s
+[16:22:53 +  3385s] S06/G0 level: masked RMSE 0.4051  unmasked 0.1609  371s
+[16:23:44 +  3437s] S07/G0 fold0: val RMSE 0.1367  train loss 0.03755  204s
+[16:23:59 +  3452s] S07/G0 fold2: val RMSE 0.1764  train loss 0.03116  160s
+[16:25:22 +  3535s] S07/G0 fold1: val RMSE 0.2507  train loss 0.02500  266s
+[16:25:30 +  3542s] S07/G0 fold3: val RMSE 0.2466  train loss 0.02584  157s
+[16:31:39 +  3911s] S08/G0 fold0: val RMSE 0.1519  train loss 0.03448  460s
+[16:31:59 +  3932s] S07/G0 level: masked RMSE 0.3540  unmasked 0.1547  495s
+[16:33:25 +  4017s] S08/G0 fold1: val RMSE 0.2460  train loss 0.02401  483s
+[16:34:35 +  4088s] S08/G0 fold2: val RMSE 0.2352  train loss 0.02697  546s
+[16:40:45 +  4458s] S09/G0 fold1: val RMSE 0.2207  train loss 0.02106  370s
+[16:41:20 +  4492s] S08/G0 fold3: val RMSE 0.2367  train loss 0.02578  581s
+[16:41:20 +  4493s] S09/G0 fold0: val RMSE 0.1868  train loss 0.02625  476s
+[16:42:42 +  4575s] S08/G0 level: masked RMSE 0.3723  unmasked 0.1596  643s
+[16:48:22 +  4914s] S10/G0 fold0: val RMSE 0.1476  train loss 0.03477  340s
+[16:50:40 +  5053s] S09/G0 level: masked RMSE 0.3277  unmasked 0.1475  560s
+[16:52:05 +  5137s] S09/G0 fold2: val RMSE 0.2084  train loss 0.02198  680s
+[16:52:42 +  5175s] S09/G0 fold3: val RMSE 0.2462  train loss 0.02285  683s
+[16:53:36 +  5228s] S10/G0 fold1: val RMSE 0.2519  train loss 0.02470  314s
+[16:56:24 +  5396s] S10/G0 fold2: val RMSE 0.1641  train loss 0.02916  344s
+[16:56:38 +  5411s] S10/G0 fold3: val RMSE 0.2852  train loss 0.02484  274s
+[16:57:42 +  5474s] S11/G0 fold0: val RMSE 0.1386  train loss 0.03787  246s
+[17:00:31 +  5644s] S11/G0 fold2: val RMSE 0.1773  train loss 0.03147  233s
+[17:02:03 +  5736s] S11/G0 fold1: val RMSE 0.2518  train loss 0.02793  340s
+[17:02:13 +  5746s] S10/G0 level: masked RMSE 0.3514  unmasked 0.1544  571s
+[17:02:22 +  5754s] S11/G0 fold3: val RMSE 0.2465  train loss 0.02601  280s
+[17:08:20 +  6113s] S11/G0 level: masked RMSE 0.3968  unmasked 0.1639  469s
+[17:08:20 +  6113s] S12/G0 fold3: NO RESULT deadline
+[17:08:20 +  6113s] S12/G0 level: NO RESULT deadline
+[17:08:42 +  6135s] S12/G0 fold0: val RMSE 0.1889  train loss 0.02624  399s
+[17:09:54 +  6206s] S12/G0 fold1: val RMSE 0.2226  train loss 0.02106  460s
+[17:10:18 +  6230s] S12/G0 fold2: val RMSE 0.2062  train loss 0.02204  476s
+[17:10:18 +  6230s] rule 1 -> S02 {"best": "S02", "best_cv": 0.1934013649368877, "se_best": 0.014392589819796619, "threshold": 0.20779395475668433, "eligible": ["S01", "S02", "S04"], "tied_on_size": ["S01", "S02", "S04"], "tied_on_level": ["S02"]}
+[17:10:18 +  6230s] stage 2 on S02 : ['G3', 'G1', 'G2']
+[17:10:18 +  6230s] S02/G3 fold0: NO RESULT deadline
+[17:10:18 +  6230s] S02/G3 fold1: NO RESULT deadline
+[17:10:18 +  6230s] S02/G3 fold3: NO RESULT deadline
+[17:10:18 +  6230s] S02/G3 fold2: NO RESULT deadline
+[17:10:18 +  6230s] S02/G3 level: NO RESULT deadline
+[17:10:18 +  6230s] S02/G1 fold2: NO RESULT deadline
+[17:10:18 +  6230s] S02/G1 fold1: NO RESULT deadline
+[17:10:18 +  6230s] S02/G1 fold3: NO RESULT deadline
+[17:10:18 +  6230s] S02/G1 fold0: NO RESULT deadline
+[17:10:18 +  6230s] S02/G1 level: NO RESULT deadline
+[17:10:18 +  6230s] S02/G2 fold0: NO RESULT deadline
+[17:10:18 +  6230s] S02/G2 fold1: NO RESULT deadline
+[17:10:18 +  6230s] S02/G2 fold2: NO RESULT deadline
+[17:10:18 +  6230s] S02/G2 fold3: NO RESULT deadline
+[17:10:18 +  6230s] S02/G2 level: NO RESULT deadline
+[17:10:18 +  6230s] rule 2 -> G0 {"best": "G0", "best_cv": 0.1934013649368877, "se_best": 0.014392589819796619, "threshold": 0.20779395475668433, "eligible": ["G0"], "tied_on_level": ["G0"]}
+[17:10:18 +  6230s] dry run: S02 + G0, 8 starts x 600 iterations, seed 0 (train only)
+[17:15:57 +  6569s] dry run train RMSE 0.16281  (339s)
+[17:15:57 +  6569s] selection done: S02 G0 identical to ct_phys8: False elapsed 6569s

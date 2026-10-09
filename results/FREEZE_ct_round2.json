@@ -1,0 +1,461 @@
+{
+ "name": "ct_round2",
+ "round": 2,
+ "description": "Round-2 grey-box two-tank Torricelli ODE selected by the pre-registered rule of PREREGISTRATION-CT-ROUND2.md: structure S02 (+w3 level-dependent lower outlet), fit G0 (baseline: MSE, single shooting, 4 starts). Base of ct_phys8 (bottle-shaped lower tank, signed pump offset, overflow clamp with routed surplus, sensor offset) plus: level-dependent lower-outlet coefficient. 9 free physical parameters; the 2 initial states are fitted per record from the first 50 samples only.",
+ "preregistration": "PREREGISTRATION-CT-ROUND2.md",
+ "structure": {
+  "id": "S02",
+  "name": "S02 +w3 level-dependent lower outlet",
+  "free": [
+   "k1",
+   "r2",
+   "k3",
+   "k4",
+   "beta",
+   "a",
+   "b4",
+   "cA",
+   "w3"
+  ],
+  "clamp_x2": true,
+  "nsub": 4,
+  "n_numbers": 11
+ },
+ "fit": {
+  "variant": "G0",
+  "label": "baseline: MSE, single shooting, 4 starts",
+  "loss": "mse",
+  "huber_delta": null,
+  "ms_K": 0,
+  "ms_lam": null,
+  "n_starts": 8,
+  "maxiter": 600,
+  "optimiser": "scipy L-BFGS-B on JAX float64 gradients, objective as stated, on the full estimation record; best start by objective"
+ },
+ "initial_state": "per-record: x0 fitted on the first 50 samples (the official state-initialisation window) with all other parameters frozen; a pump-lag state starts at the previous input (steady state), a delayed-overflow buffer starts empty (no extra fitted numbers)",
+ "selection": {
+  "kernel": "sankalpsthakur/bench-control-ct-round2-select v1",
+  "reproduction_gate": {
+   "s00_cv": 0.20907902629343883,
+   "round1_cv": 0.2089,
+   "tol": 0.003,
+   "passed": true,
+   "folds": [
+    0.13869705621661935,
+    0.25181113120167375,
+    0.17728419442518042,
+    0.24653752685958819
+   ],
+   "round1_folds": [
+    0.139,
+    0.252,
+    0.177,
+    0.246
+   ],
+   "level_rmse": 0.39591550955285343,
+   "round1_level": 0.396
+  },
+  "stage1": {
+   "S00": {
+    "cand": "S00",
+    "variant": "G0",
+    "label": "C = ct_phys8 (reference)",
+    "n_numbers": 10,
+    "folds": [
+     0.13869705621661935,
+     0.25181113120167375,
+     0.17728419442518042,
+     0.24653752685958819
+    ],
+    "cv": 0.20907902629343883,
+    "se": 0.026098447270413275,
+    "level_rmse": 0.39591550955285343,
+    "complete": true,
+    "secs": 980.6
+   },
+   "S01": {
+    "cand": "S01",
+    "variant": "G0",
+    "label": "+tp pump/inflow lag",
+    "n_numbers": 11,
+    "folds": [
+     0.1483966205628191,
+     0.25178952351115763,
+     0.1646183829325758,
+     0.228786360286798
+    ],
+    "cv": 0.2030159672273697,
+    "se": 0.02445936268028483,
+    "level_rmse": 0.35139643988390945,
+    "complete": true,
+    "secs": 1643.8
+   },
+   "S02": {
+    "cand": "S02",
+    "variant": "G0",
+    "label": "+w3 level-dependent lower outlet",
+    "n_numbers": 11,
+    "folds": [
+     0.1555098745749091,
+     0.225320231612949,
+     0.20092795649348497,
+     0.18518039926714738
+    ],
+    "cv": 0.1934013649368877,
+    "se": 0.014392589819796619,
+    "level_rmse": 0.3380750134268107,
+    "complete": true,
+    "secs": 1726.0
+   },
+   "S03": {
+    "cand": "S03",
+    "variant": "G0",
+    "label": "+to delayed overflow return",
+    "n_numbers": 11,
+    "folds": [
+     0.1386336855325185,
+     0.25181110418748043,
+     0.17667484085752136,
+     0.2502107842570015
+    ],
+    "cv": 0.21002831172664652,
+    "se": 0.026619639025694107,
+    "level_rmse": 0.3961117242536504,
+    "complete": true,
+    "secs": 1444.0
+   },
+   "S04": {
+    "cand": "S04",
+    "variant": "G0",
+    "label": "+qov flow-dependent overflow routing",
+    "n_numbers": 11,
+    "folds": [
+     0.14039168504176278,
+     0.25225536634460394,
+     0.1778222590472678,
+     0.234181497752196
+    ],
+    "cv": 0.20603660159098627,
+    "se": 0.02463517223034981,
+    "level_rmse": 0.3960858764964035,
+    "complete": true,
+    "secs": 1336.7
+   },
+   "S05": {
+    "cand": "S05",
+    "variant": "G0",
+    "label": "+c4 pump curvature",
+    "n_numbers": 11,
+    "folds": [
+     0.14627021303702525,
+     0.24767848936831005,
+     0.1686165554631042,
+     0.34209092461677093
+    ],
+    "cv": 0.23885003286532336,
+    "se": 0.04564735302840331,
+    "level_rmse": 0.3984823750401265,
+    "complete": true,
+    "secs": 2258.3
+   },
+   "S06": {
+    "cand": "S06",
+    "variant": "G0",
+    "label": "+h0 upper outlet height (round-1 H1)",
+    "n_numbers": 11,
+    "folds": [
+     0.2075913292526254,
+     0.23946545425928079,
+     0.23761386020679856,
+     0.2668852731992349
+    ],
+    "cv": 0.23881266684238184,
+    "se": 0.012030478116061684,
+    "level_rmse": 0.4050685329423394,
+    "complete": true,
+    "secs": 1561.7
+   },
+   "S07": {
+    "cand": "S07",
+    "variant": "G0",
+    "label": "+FIR input taps (round-1 F1)",
+    "n_numbers": 12,
+    "folds": [
+     0.1366506038088155,
+     0.2506860575375916,
+     0.1764490894379484,
+     0.24657768487372114
+    ],
+    "cv": 0.20823767839071522,
+    "se": 0.026327194201860284,
+    "level_rmse": 0.35402848130630105,
+    "complete": true,
+    "secs": 1282.6
+   },
+   "S08": {
+    "cand": "S08",
+    "variant": "G0",
+    "label": "+cA1 upper-tank capacity slope",
+    "n_numbers": 11,
+    "folds": [
+     0.15193609373653735,
+     0.24596144715694118,
+     0.23516005362196257,
+     0.23669237658523884
+    ],
+    "cv": 0.2207403123698226,
+    "se": 0.01953459876130776,
+    "level_rmse": 0.3722682851524444,
+    "complete": true,
+    "secs": 2711.6
+   },
+   "S09": {
+    "cand": "S09",
+    "variant": "G0",
+    "label": "+tp +w3",
+    "n_numbers": 12,
+    "folds": [
+     0.18679252920473668,
+     0.2207134736335808,
+     0.20843754311466328,
+     0.2462389003788149
+    ],
+    "cv": 0.21661353365472621,
+    "se": 0.012430994187119229,
+    "level_rmse": 0.32767215212093903,
+    "complete": true,
+    "secs": 2767.7
+   },
+   "S10": {
+    "cand": "S10",
+    "variant": "G0",
+    "label": "+tp +to",
+    "n_numbers": 12,
+    "folds": [
+     0.14763206067944123,
+     0.2519263630505887,
+     0.1640511088588489,
+     0.2851683159346339
+    ],
+    "cv": 0.2199408173072749,
+    "se": 0.03268337327224474,
+    "level_rmse": 0.3514264571314758,
+    "complete": true,
+    "secs": 1841.4
+   },
+   "S11": {
+    "cand": "S11",
+    "variant": "G0",
+    "label": "+qov +to",
+    "n_numbers": 12,
+    "folds": [
+     0.13860143851463225,
+     0.25181110364737264,
+     0.17728472766469322,
+     0.24653754868827338
+    ],
+    "cv": 0.2090632848294987,
+    "se": 0.026112222775506885,
+    "level_rmse": 0.39677589196679613,
+    "complete": true,
+    "secs": 1567.3
+   },
+   "S12": {
+    "cand": "S12",
+    "variant": "G0",
+    "label": "+tp +w3 +to",
+    "n_numbers": 13,
+    "folds": [
+     0.18889033116455342,
+     0.22262759171198607,
+     0.20620263509329687,
+     null
+    ],
+    "level_rmse": null,
+    "complete": false,
+    "secs": 1335.0,
+    "error": "deadline"
+   },
+   "S13": {
+    "cand": "S13",
+    "variant": "G0",
+    "label": "swap: cA replaced by w3",
+    "n_numbers": 10,
+    "folds": [
+     0.2232937724667051,
+     0.25231977654123944,
+     0.1992474827182903,
+     0.23680530908553593
+    ],
+    "cv": 0.2287475094055153,
+    "se": 0.011076625856903406,
+    "level_rmse": 0.36757338602312034,
+    "complete": true,
+    "secs": 1567.6
+   }
+  },
+  "rule1": {
+   "best": "S02",
+   "best_cv": 0.1934013649368877,
+   "se_best": 0.014392589819796619,
+   "threshold": 0.20779395475668433,
+   "eligible": [
+    "S01",
+    "S02",
+    "S04"
+   ],
+   "n_numbers_min": 11,
+   "tied_on_size": [
+    "S01",
+    "S02",
+    "S04"
+   ],
+   "best_level_rmse_among_ties": 0.3380750134268107,
+   "tied_on_level": [
+    "S02"
+   ],
+   "chosen": "S02"
+  },
+  "stage2_structure": "S02",
+  "stage2": {
+   "G0": {
+    "cand": "S02",
+    "variant": "G0",
+    "label": "+w3 level-dependent lower outlet",
+    "n_numbers": 11,
+    "folds": [
+     0.1555098745749091,
+     0.225320231612949,
+     0.20092795649348497,
+     0.18518039926714738
+    ],
+    "cv": 0.1934013649368877,
+    "se": 0.014392589819796619,
+    "level_rmse": 0.3380750134268107,
+    "complete": true,
+    "secs": 1726.0
+   },
+   "G3": {
+    "cand": "S02",
+    "variant": "G3",
+    "label": "+w3 level-dependent lower outlet",
+    "n_numbers": 11,
+    "folds": [
+     null,
+     null,
+     null,
+     null
+    ],
+    "level_rmse": null,
+    "complete": false,
+    "secs": 0.0,
+    "error": "deadline"
+   },
+   "G1": {
+    "cand": "S02",
+    "variant": "G1",
+    "label": "+w3 level-dependent lower outlet",
+    "n_numbers": 11,
+    "folds": [
+     null,
+     null,
+     null,
+     null
+    ],
+    "level_rmse": null,
+    "complete": false,
+    "secs": 0.0,
+    "error": "deadline"
+   },
+   "G2": {
+    "cand": "S02",
+    "variant": "G2",
+    "label": "+w3 level-dependent lower outlet",
+    "n_numbers": 11,
+    "folds": [
+     null,
+     null,
+     null,
+     null
+    ],
+    "level_rmse": null,
+    "complete": false,
+    "secs": 0.0,
+    "error": "deadline"
+   }
+  },
+  "rule2": {
+   "best": "G0",
+   "best_cv": 0.1934013649368877,
+   "se_best": 0.014392589819796619,
+   "threshold": 0.20779395475668433,
+   "eligible": [
+    "G0"
+   ],
+   "n_numbers_min": 11,
+   "tied_on_size": [
+    "G0"
+   ],
+   "best_level_rmse_among_ties": 0.3380750134268107,
+   "tied_on_level": [
+    "G0"
+   ],
+   "chosen": "G0"
+  },
+  "method": "see PREREGISTRATION-CT-ROUND2.md section 4; 4 contiguous masked blocks of 256 on the ESTIMATION record, level-extrapolation check (lowest 12 % masked), smallest structure within one standard error of the best pooled CV RMSE, ties by the extrapolation check"
+ },
+ "dry_run_train_only": {
+  "train_rmse": 0.16280935018060147,
+  "objective": 0.026506884506229705,
+  "theta": {
+   "k1": 0.1534921199964163,
+   "r2": 0.995338927142441,
+   "k3": 0.1815927960792691,
+   "k4": 0.2033865713097371,
+   "beta": 0.7161538283027421,
+   "a": 1.4657099025974838,
+   "b4": 0.9857996845272035,
+   "cA": -0.1268067404007169,
+   "w3": -0.13996152211318966
+  },
+  "x0": [
+   5.568010078654481,
+   3.6962015844655403
+  ],
+  "secs": 339.1
+ },
+ "identical_to_ct_phys8": false,
+ "identity_check": {
+  "compared_with": "results/ct_final_ct_phys8.json seed 0",
+  "applicable": false,
+  "identical": false
+ },
+ "seeds": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9
+ ],
+ "protocol": "official nonlinear_benchmarks metric RMSE(test, y_model, n_init=50), free-run simulation, test record scored once per seed via ct.protocol.test_eval (ct2/final2.py)",
+ "claim_rule": {
+  "headline": "mean over seeds 0-9 of the official test RMSE (never the best seed); uncertainty = paired/unpaired moving-block bootstrap (block 25) of the test residuals, NOT the seed spread (seeds are expected to collapse onto one optimum; the reference code's 0.04 seed spread comes from network initialisation and is not comparable)",
+  "beats_0221_entry": "only if, for every one of our seeds, the 95% upper bound of the paired moving-block-bootstrap RMSE difference (ours minus the reference code's seed-42 trajectory, test[50:], block 25) is below 0 (ct/compare_ref.py)",
+  "beats_reference_code_in_general": "reported as the fraction of the other 10 reference seeds beaten under the same paired rule",
+  "wording": "best published result on Cascaded Tanks, official split, n_init=50 free-run simulation RMSE, self-evaluated, as of 2026-10-09 -- used ONLY if the first rule holds; otherwise 'matches/does not beat' with the numbers",
+  "post_hoc": "any further scoring of the test record after this run (e.g. variants, ensembles, reverse split) is logged, labelled post-hoc, and excluded from the claim"
+ },
+ "claim_rule_note": "copied verbatim from results/FREEZE_ct_phys8.json; only the 'as of' date in the wording is the date of this run. A result at or above 0.221 V is reported as-is.",
+ "test_record_information_used_in_design": "Round 2 is NOT an independent test of the test record. The candidate families (pump lag, level-dependent lower outlet, delayed overflow return, flow-dependent routing, upper outlet height, input FIR) were chosen after the round-1 error analysis of the TEST residuals (REPORT-CT.md section 4: 86 % of the squared test error on the fast rise to the second large peak and its under-shoot; test minimum 2.16 V below the estimation minimum 2.91 V; round-1 test RMSE 0.2719 V). The selection itself used the estimation record only. No round-2 code reads test values before this freeze, and the saved round-1 test predictions were not opened. nonlinearbenchmark.org's reporting rules forbid using test data to tune structure; a board resubmission of a round-2 result would need the lead to weigh that rule.",
+ "test_record_looked_at_before_freeze": "Everything in results/FREEZE_ct_phys8.json 'test_record_looked_at_before_freeze' still applies, plus the round-1 scoring of ct_phys8 (TEST-LOG.md rows 15-24) and its error analysis. In round 2 no model of ours was scored on the test record before this freeze.",
+ "gate": {
+  "train_rmse_seed0": 0.16280935018060147,
+  "tol": 0.003,
+  "source": "dry run in the selection kernel (full estimation record, seed 0, final hyper-parameters)"
+ }
+}

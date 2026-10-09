@@ -1,0 +1,53 @@
+{
+ "payload": {
+  "t": 0.0,
+  "ok": true,
+  "files": 25
+ },
+ "venv": {
+  "t": 29.9,
+  "ok": true,
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.5.3",
+   "scipy": "1.18.1",
+   "jax": "0.11.2",
+   "jaxlib": "0.11.2",
+   "matplotlib": "3.10.9",
+   "nonlinear_benchmarks": "1.0.1"
+  }
+ },
+ "git": {
+  "t": 30.0,
+  "ok": true,
+  "git_tree_ct": "120f81f08ff5460b0a8d79758ebc28364ba9eca7",
+  "git_tree_ct2": "154418ac682ff740359d8e99f7e43891f5ad8ff6",
+  "git_blob_prereg": "fa233c1af20e9688692abcb1b9220c89a8c31420"
+ },
+ "data": {
+  "t": 33.8,
+  "ok": true,
+  "attempt": 1,
+  "info": {
+   "zip_bytes": 7520592,
+   "zip_sha256": "eb0fa05851e8a7136846c2e3b61fbef87def78d0852c86ab91b02ac5db541b51",
+   "mat_bytes": 24401,
+   "mat_sha256": "cb2f88d4388be4d3f2a24c6402fba804976aac5f2e1f26cda59ea0a38d016eab",
+   "n_train": 1024,
+   "n_test": 1024,
+   "Ts": 4.0,
+   "test_state_init_window": 50,
+   "url": "https://drive.google.com/file/d/1HnQf_gu0g_UlggoBqy2s34l9YJiFdN01/view",
+   "match_expected": true
+  }
+ },
+ "preflight": {
+  "t": 237.8,
+  "ok": true
+ },
+ "select": {
+  "t": 6811.8,
+  "ok": true,
+  "rc": 0
+ }
+}
