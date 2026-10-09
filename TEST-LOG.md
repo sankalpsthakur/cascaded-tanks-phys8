@@ -37,3 +37,24 @@ state-initialisation window and excluded (n_init=50), volts.
 Rows 15-24: frozen-configuration run of `ct_phys8` (`ct/final.py results/FREEZE_ct_phys8.json --seeds 0..9`), executed in the private Kaggle kernel `sankalpsthakur/bench-control-ct-final v1` (finished 2026-10-07 11:08 UTC).
 The `code @` column shows the throw-away commit that the kernel made of the sources. Integrity: the kernel verified the sha256 of all 42 payload files against a manifest built from the control repo's working tree; the git tree hash of `ct/` (120f81f0) and the blob hash of the freeze file (55e4323c) equal the control repo's at f0d4572 (the frozen files); `tools/ct_aggregate.py`, `tools/ct_edge_run.py` and `tools/ct_data_check.py` first exist in commit 930ec7a and were hashed in the manifest (sha256 in the kernel log), they are not part of the frozen set and never score a model; see `logs/kaggle-output/ct-final/out/manifest_verified.json` and the kernel log.
 Each seed was scored exactly once; nothing in these rows was used for selection. Further scoring of the test record (variants, ensembles, reversed split) would be logged below, labelled post-hoc.
+
+## CT round 2: frozen `ct_round2` run (kernel copy; rows are numbered from 25 to continue the Cascaded Tanks rows of TEST-LOG.md)
+
+Official metric `nonlinear_benchmarks` RMSE(y_test, y_model, n_init=50), free-run simulation, volts. One row per scoring of the test record, failures included.
+
+| # | UTC | tag | config | seed | RMSE n_init=50 | extra | purpose | code @ |
+|---|-----|-----|--------|------|----------------|-------|---------|--------|
+| 25 | 2026-10-09 18:08:30 | FROZEN ct_round2 | 7b14ad4246 | 0 | 0.2362 | train_rmse=0.1628; fit=1002s | frozen-config final run (one score per seed) | 10f2522 |
+| 26 | 2026-10-09 18:08:31 | FROZEN ct_round2 | 7b14ad4246 | 1 | 0.2362 | train_rmse=0.1628; fit=1080s | frozen-config final run (one score per seed) | 10f2522 |
+| 27 | 2026-10-09 18:08:31 | FROZEN ct_round2 | 7b14ad4246 | 2 | 0.2362 | train_rmse=0.1628; fit=567s | frozen-config final run (one score per seed) | 10f2522 |
+| 28 | 2026-10-09 18:08:32 | FROZEN ct_round2 | 7b14ad4246 | 3 | 0.2363 | train_rmse=0.1628; fit=912s | frozen-config final run (one score per seed) | 10f2522 |
+| 29 | 2026-10-09 18:08:32 | FROZEN ct_round2 | 7b14ad4246 | 4 | 0.2362 | train_rmse=0.1628; fit=716s | frozen-config final run (one score per seed) | 10f2522 |
+| 30 | 2026-10-09 18:08:32 | FROZEN ct_round2 | 7b14ad4246 | 5 | 0.2362 | train_rmse=0.1628; fit=669s | frozen-config final run (one score per seed) | 10f2522 |
+| 31 | 2026-10-09 18:08:33 | FROZEN ct_round2 | 7b14ad4246 | 6 | 0.2362 | train_rmse=0.1628; fit=988s | frozen-config final run (one score per seed) | 10f2522 |
+| 32 | 2026-10-09 18:08:33 | FROZEN ct_round2 | 7b14ad4246 | 7 | 0.2362 | train_rmse=0.1628; fit=911s | frozen-config final run (one score per seed) | 10f2522 |
+| 33 | 2026-10-09 18:08:34 | FROZEN ct_round2 | 7b14ad4246 | 8 | 0.2363 | train_rmse=0.1628; fit=782s | frozen-config final run (one score per seed) | 10f2522 |
+| 34 | 2026-10-09 18:08:34 | FROZEN ct_round2 | 7b14ad4246 | 9 | 0.2362 | train_rmse=0.1628; fit=616s | frozen-config final run (one score per seed) | 10f2522 |
+
+Rows 25-34: frozen-configuration run of `ct_round2` (`ct2/final2.py results/FREEZE_ct_round2.json --seeds 0..9`, freeze committed in 4968eec), executed in the private Kaggle kernel `sankalpsthakur/bench-control-ct-round2-final v1` (finished 18:09 UTC).
+Every scoring of the test record by round-2 code is a row here, failures included; the `code @` column is the kernel's throw-away commit of the byte-identical sources (sha256 manifest, tree hashes of `ct/` and `ct2/` and the freeze blob checked against the control repo; see `logs/kaggle-output/ct-round2-final/out/manifest_verified.json`).
+Each seed was scored exactly once; nothing in these rows was used for selection. The result did not meet the pre-registered claim rule (section 8 of PREREGISTRATION-CT-ROUND2.md); it is reported as-is in REPORT-CT.md section 9.
